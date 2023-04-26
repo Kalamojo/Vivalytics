@@ -17,8 +17,8 @@ def get_img_link(url):
 		return image['src']
 	return "not_found"
   
-stm.title("This is PageOne Geeks.")
-stm.sidebar.success("You are currently viewing Page One Geek")
+stm.title("Individual Stats")
+stm.sidebar.success("You are currently viewing The Stats Searching page")
 df = pd.read_csv("./resources/standard_stats_5.csv")
 
 player = stm.selectbox("Enter the name of a player", 

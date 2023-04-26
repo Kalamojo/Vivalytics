@@ -2,8 +2,8 @@ import streamlit as stm
 import pandas as pd
 from tools.spyder import spyder
   
-stm.title("This is PageTwo Geeks.")
-stm.sidebar.success("You are currently viewing Page Two Geek")
+stm.title("Stats Comparison")
+stm.sidebar.success("You are currently viewing The Player Comparison page")
 
 df = pd.read_csv("./resources/standard_stats_5.csv")
 
