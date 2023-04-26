@@ -22,7 +22,7 @@ stm.sidebar.success("You are currently viewing The Stats Searching page")
 df = pd.read_csv("./resources/standard_stats_5.csv")
 
 player = stm.selectbox("Enter the name of a player", 
-						  [''] + list(set(df["Player"])),
+						  [''] + sorted(list(set(df["Player"]))),
 						  0)
 if player:
 	#try:

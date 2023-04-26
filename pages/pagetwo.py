@@ -7,7 +7,7 @@ stm.sidebar.success("You are currently viewing The Player Comparison page")
 
 df = pd.read_csv("./resources/standard_stats_5.csv")
 
-playerList = stm.multiselect("Enter Player Names", list(set(df["Player"])))
+playerList = stm.multiselect("Enter Player Names", sorted(list(set(df["Player"]))))
 #player2 = stm.text_input("Enter the second player name")
 if playerList:
 	try:
