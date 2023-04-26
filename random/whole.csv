@@ -1,0 +1,483 @@
+,Player,Club,Nationality,Goals,TotalPasses,Touches,TotalShots,BigChancesMissed,Appearances,Offsides,Disposessions,TotalCrosses,ThroughBalls,PlayerName
+0,Erling Haaland,Manchester City,Norway,32.0,368.0,648.0,96.0,20.0,28.0,7.0,,,3.0,E.Haaland
+1,Harry Kane,Tottenham Hotspur,England,23.0,668.0,1189.0,112.0,11.0,31.0,13.0,54.0,,11.0,H.Kane
+2,Ivan Toney,Brentford,England,18.0,668.0,1213.0,88.0,16.0,29.0,23.0,39.0,,10.0,I.Toney
+3,Marcus Rashford,Manchester United,England,15.0,629.0,1074.0,79.0,16.0,29.0,12.0,37.0,,2.0,M.Rashford
+4,Gabriel Martinelli,Arsenal,Brazil,14.0,,1456.0,72.0,5.0,30.0,8.0,51.0,,7.0,G.Martinelli
+5,Ollie Watkins,Aston Villa,England,14.0,460.0,,72.0,16.0,30.0,14.0,35.0,9.0,,O.Watkins
+6,Mohamed Salah,Liverpool,Egypt,13.0,741.0,1230.0,92.0,16.0,29.0,17.0,59.0,20.0,9.0,M.Salah
+7,Bukayo Saka,Arsenal,England,12.0,997.0,1663.0,69.0,,30.0,9.0,47.0,135.0,,B.Saka
+8,Miguel Almirón,Newcastle United,Paraguay,11.0,740.0,,,4.0,26.0,9.0,,,,M.Almirón
+9,Aleksandar Mitrovic,Fulham,Serbia,11.0,,,86.0,10.0,,14.0,53.0,,4.0,A.Mitrovic
+10,Rodrigo,Leeds United,Spain,11.0,,651.0,,,23.0,7.0,,14.0,4.0,
+11,Harvey Barnes,Leicester City,England,10.0,621.0,1046.0,,8.0,28.0,7.0,36.0,36.0,4.0,H.Barnes
+12,Callum Wilson,Newcastle United,England,10.0,,,,11.0,23.0,13.0,23.0,,,C.Wilson
+13,Martin Ødegaard,Arsenal,Norway,10.0,1314.0,1763.0,77.0,,29.0,,41.0,,18.0,M.Ødegaard
+14,Roberto Firmino,Liverpool,Brazil,9.0,517.0,742.0,36.0,6.0,22.0,4.0,,12.0,7.0,R.Firmino
+15,Phil Foden,Manchester City,England,9.0,754.0,1078.0,35.0,2.0,,3.0,24.0,,2.0,P.Foden
+16,James Maddison,Leicester City,England,9.0,821.0,1247.0,66.0,,,4.0,,,,J.Maddison
+17,Gabriel Jesus,Arsenal,Brazil,8.0,,,,14.0,,11.0,44.0,7.0,2.0,G.Jesus
+18,Danny Ings,West Ham United,England,8.0,,,36.0,5.0,28.0,14.0,24.0,,6.0,D.Ings
+19,Alexander Isak,Newcastle United,Sweden,8.0,172.0,,32.0,4.0,14.0,4.0,15.0,3.0,4.0,A.Isak
+20,Kevin De Bruyne,Manchester City,Belgium,5.0,1198.0,1745.0,60.0,3.0,28.0,5.0,25.0,211.0,25.0,
+21,Jack Grealish,Manchester City,England,5.0,,1251.0,35.0,2.0,,3.0,23.0,46.0,4.0,J.Grealish
+22,Mathias Jensen,Brentford,Denmark,5.0,,1661.0,,,31.0,,28.0,135.0,,M.Jensen
+23,Riyad Mahrez,Manchester City,Algeria,5.0,706.0,1010.0,36.0,4.0,22.0,5.0,13.0,69.0,,R.Mahrez
+24,Bryan Mbeumo,Brentford,Cameroon,5.0,634.0,,,8.0,31.0,4.0,46.0,119.0,,B.Mbeumo
+25,Dominic Solanke,Bournemouth,England,5.0,392.0,893.0,62.0,5.0,26.0,7.0,60.0,8.0,,D.Solanke
+26,Yoane Wissa,Brentford,DR Congo,5.0,261.0,477.0,25.0,,31.0,14.0,,,4.0,Y.Wissa
+27,Granit Xhaka,Arsenal,Switzerland,5.0,1354.0,1702.0,31.0,,30.0,3.0,,38.0,5.0,G.Xhaka
+28,Joelinton,Newcastle United,Brazil,4.0,956.0,1476.0,40.0,3.0,26.0,1.0,44.0,15.0,2.0,
+29,Taiwo Awoniyi,Nottingham Forest,Nigeria,4.0,128.0,,19.0,6.0,19.0,9.0,,3.0,,T.Awoniyi
+30,Leon Bailey,Aston Villa,Jamaica,4.0,,,,3.0,29.0,8.0,51.0,,3.0,L.Bailey
+31,Saïd Benrahma,West Ham United,Algeria,4.0,558.0,943.0,,,27.0,5.0,32.0,63.0,3.0,S.Benrahma
+32,Jarrod Bowen,West Ham United,England,4.0,570.0,1181.0,63.0,4.0,29.0,7.0,48.0,131.0,,J.Bowen
+33,Patson Daka,Leicester City,Zambia,4.0,,,25.0,4.0,,6.0,16.0,,,P.Daka
+34,Bobby De Cordova-Reid,-,Jamaica,4.0,704.0,1149.0,29.0,2.0,29.0,7.0,26.0,52.0,,
+35,Odsonne Édouard,Crystal Palace,France,4.0,346.0,645.0,36.0,3.0,28.0,11.0,46.0,,,O.Édouard
+36,Evan Ferguson,Brighton & Hove Albion,Ireland,4.0,155.0,,23.0,3.0,13.0,1.0,12.0,,,E.Ferguson
+37,Cody Gakpo,Liverpool,Netherlands,4.0,,,22.0,3.0,,6.0,,14.0,,C.Gakpo
+38,Demarai Gray,Everton,England,4.0,620.0,1216.0,,4.0,29.0,12.0,62.0,158.0,2.0,D.Gray
+39,Ilkay Gündogan,Manchester City,Germany,4.0,,1413.0,,7.0,26.0,6.0,23.0,,14.0,I.Gündogan
+40,Luis Díaz,Liverpool,Colombia,3.0,,,16.0,2.0,8.0,,24.0,7.0,,L.Díaz
+41,Antony,Manchester United,Brazil,3.0,523.0,772.0,,2.0,,,8.0,,2.0,
+42,Gabriel Magalhães,Arsenal,Brazil,3.0,1887.0,2240.0,26.0,2.0,30.0,1.0,3.0,3.0,,G.Magalhães
+43,Anthony Gordon,Newcastle United,England,3.0,368.0,692.0,30.0,3.0,,4.0,26.0,,2.0,A.Gordon
+44,Bruno Guimarães,Newcastle United,Brazil,3.0,,1556.0,20.0,,,,45.0,13.0,16.0,B.Guimarães
+45,Andreas Pereira,Fulham,Brazil,3.0,803.0,,,4.0,30.0,2.0,50.0,183.0,,A.Pereira
+46,Vitaly Janelt,Brentford,Germany,3.0,716.0,972.0,11.0,,28.0,,,17.0,3.0,V.Janelt
+47,Jefferson Lerma,Bournemouth,Colombia,3.0,1218.0,1575.0,28.0,3.0,30.0,2.0,13.0,8.0,7.0,J.Lerma
+48,João Palhinha,Fulham,Portugal,3.0,963.0,1401.0,34.0,1.0,27.0,,,,,J.Palhinha
+49,Ben Mee,Brentford,England,3.0,1321.0,1725.0,,,30.0,,,7.0,,B.Mee
+50,Mason Mount,Chelsea,England,3.0,705.0,1050.0,33.0,,,,29.0,64.0,,M.Mount
+51,Reiss Nelson,Arsenal,England,3.0,,,6.0,,,,6.0,7.0,,R.Nelson
+52,Thomas Partey,Arsenal,Ghana,3.0,1573.0,1909.0,25.0,,25.0,,16.0,7.0,8.0,T.Partey
+53,Harrison Reed,Fulham,England,3.0,978.0,,,,29.0,2.0,,42.0,,H.Reed
+54,Gianluca Scamacca,West Ham United,Italy,3.0,175.0,311.0,30.0,,,6.0,,,,G.Scamacca
+55,Luis Sinisterra,Leeds United,Colombia,3.0,282.0,,21.0,,,5.0,,6.0,,L.Sinisterra
+56,Douglas Luiz,Aston Villa,Brazil,3.0,1380.0,1813.0,25.0,,30.0,2.0,26.0,,3.0,D.Luiz
+57,Youri Tielemans,Leicester City,Belgium,3.0,1215.0,1517.0,24.0,,24.0,,13.0,33.0,8.0,Y.Tielemans
+58,Virgil van Dijk,Liverpool,Netherlands,3.0,1834.0,2072.0,23.0,4.0,24.0,,,,,
+59,Joe Willock,Newcastle United,England,3.0,733.0,1153.0,44.0,7.0,29.0,3.0,,39.0,,J.Willock
+60,Chris Wood,Nottingham Forest,New Zealand,3.0,,,12.0,,,6.0,,,,C.Wood
+61,Carlos Alcaraz,Southampton,Argentina,2.0,154.0,,16.0,,,,,2.0,,C.Alcaraz
+62,Carlos Vinícius,Fulham,Brazil,2.0,131.0,,,,,,12.0,5.0,3.0,C.Vinícius
+63,Jaidon Anthony,Bournemouth,England,2.0,389.0,645.0,20.0,,,5.0,15.0,35.0,2.0,J.Anthony
+64,Joe Aribo,Southampton,Nigeria,2.0,359.0,,,,20.0,,,8.0,,J.Aribo
+65,Casemiro,Manchester United,Brazil,2.0,,1171.0,,2.0,19.0,1.0,,12.0,7.0,
+66,João Cancelo,-,Portugal,2.0,,1432.0,,,,4.0,,45.0,2.0,J.Cancelo
+67,Ben Chilwell,Chelsea,England,2.0,614.0,970.0,15.0,1.0,20.0,3.0,16.0,,2.0,B.Chilwell
+68,Ben Davies,Tottenham Hotspur,Wales,2.0,,1255.0,,,25.0,,5.0,,,B.Davies
+69,Emmanuel Dennis,Nottingham Forest,Nigeria,2.0,157.0,,20.0,,,4.0,23.0,,,E.Dennis
+70,Kiernan Dewsbury-Hall,Leicester City,England,2.0,,1495.0,23.0,3.0,28.0,1.0,29.0,45.0,8.0,K.Dewsbury-Hall
+71,Eric Dier,Tottenham Hotspur,England,2.0,1827.0,2111.0,16.0,,29.0,1.0,,,,E.Dier
+72,Abdoulaye Doucouré,Everton,Mali,2.0,388.0,,12.0,2.0,19.0,5.0,7.0,,,A.Doucouré
+73,Julio Enciso,Brighton & Hove Albion,Paraguay,2.0,84.0,160.0,19.0,1.0,,1.0,,1.0,,J.Enciso
+74,João Félix,Chelsea,Portugal,2.0,272.0,461.0,36.0,3.0,,6.0,8.0,19.0,2.0,J.Félix
+75,Fábio Carvalho,Liverpool,Portugal,2.0,135.0,212.0,11.0,1.0,,,15.0,,,F.Carvalho
+76,Jorginho,Arsenal,Italy,2.0,1221.0,1455.0,8.0,,25.0,,15.0,,,
+77,Conor Gallagher,Chelsea,England,2.0,590.0,927.0,19.0,,28.0,,28.0,45.0,,C.Gallagher
+78,Alejandro Garnacho,Manchester United,Argentina,2.0,142.0,,16.0,2.0,15.0,3.0,12.0,,,A.Garnacho
+79,Morgan Gibbs-White,Nottingham Forest,England,2.0,798.0,1389.0,,4.0,29.0,5.0,37.0,143.0,14.0,M.Gibbs-White
+80,Wilfried Gnonto,Leeds United,Italy,2.0,368.0,648.0,,1.0,,3.0,16.0,35.0,4.0,W.Gnonto
+81,Rodri,Manchester City,Spain,2.0,2560.0,2895.0,,3.0,29.0,3.0,16.0,6.0,2.0,
+82,Hwang Hee-Chan,Wolverhampton Wanderers,South Korea,2.0,,320.0,8.0,,20.0,,15.0,9.0,,H.Hee-Chan
+83,Dan James,Fulham,Wales,2.0,170.0,312.0,,,20.0,,,,,D.James
+84,Kalidou Koulibaly,Chelsea,Senegal,2.0,1444.0,1706.0,11.0,,22.0,,2.0,,,K.Koulibaly
+85,Rasmus Kristensen,Leeds United,Denmark,2.0,564.0,935.0,11.0,1.0,19.0,,,,,R.Kristensen
+86,Dejan Kulusevski,Tottenham Hotspur,Sweden,2.0,578.0,988.0,36.0,1.0,23.0,,38.0,49.0,3.0,D.Kulusevski
+87,Adam Lallana,Brighton & Hove Albion,England,2.0,310.0,,8.0,1.0,,,,3.0,,A.Lallana
+88,Emerson Royal,Tottenham Hotspur,Brazil,2.0,657.0,,15.0,1.0,22.0,,,44.0,,E.Royal
+89,Jean-Philippe Mateta,Crystal Palace,France,2.0,138.0,,25.0,3.0,25.0,7.0,,,,J.Mateta
+90,Michael Olise,Crystal Palace,France,2.0,,1545.0,37.0,,30.0,7.0,37.0,169.0,2.0,M.Olise
+91,Romain Perraud,Southampton,France,2.0,628.0,,29.0,,27.0,3.0,,,,R.Perraud
+92,Ethan Pinnock,Brentford,Jamaica,2.0,,1214.0,10.0,,23.0,,6.0,8.0,,E.Pinnock
+93,Declan Rice,West Ham United,England,2.0,1675.0,2076.0,29.0,,29.0,,24.0,40.0,2.0,D.Rice
+94,Fred,Manchester United,Brazil,2.0,618.0,,24.0,,26.0,,13.0,,,
+95,William Saliba,-,France,2.0,1864.0,2095.0,6.0,,27.0,,6.0,,,W.Saliba
+96,Jeffrey Schlupp,Crystal Palace,Ghana,2.0,771.0,1174.0,23.0,,30.0,,28.0,15.0,,J.Schlupp
+97,Marcos Senesi,Bournemouth,Argentina,2.0,996.0,,6.0,,26.0,,,7.0,,M.Senesi
+98,Ryan Sessegnon,Tottenham Hotspur,England,2.0,290.0,510.0,,,,7.0,10.0,,2.0,R.Sessegnon
+99,Pascal Struijk,Leeds United,Netherlands,2.0,984.0,1539.0,,,,,10.0,17.0,,P.Struijk
+100,Lucas Paquetá,West Ham United,Brazil,2.0,769.0,,39.0,,20.0,,29.0,17.0,11.0,L.Paquetá
+101,Adama Traoré,Wolverhampton Wanderers,Spain,2.0,362.0,709.0,17.0,,28.0,6.0,23.0,,3.0,A.Traoré
+102,Bertrand Traoré,Aston Villa,Burkina Faso,2.0,,,7.0,,,,3.0,3.0,,B.Traoré
+103,Ben White,Arsenal,England,2.0,1502.0,2032.0,,,30.0,,6.0,48.0,4.0,B.White
+104,Kurt Zouma,West Ham United,France,2.0,732.0,919.0,16.0,,20.0,,,,,K.Zouma
+105,Brenden Aaronson,Leeds United,United States,1.0,658.0,1183.0,37.0,,29.0,5.0,71.0,67.0,7.0,B.Aaronson
+106,Tosin Adarabioyo,Fulham,England,1.0,785.0,967.0,8.0,,,,,2.0,,T.Adarabioyo
+107,Nayef Aguerd,West Ham United,Morocco,1.0,509.0,643.0,8.0,3.0,12.0,1.0,,,,N.Aguerd
+108,Rayan Aït-Nouri,Wolverhampton Wanderers,Algeria,1.0,,756.0,10.0,,20.0,3.0,,,,R.Aït-Nouri
+109,Marc Albrighton,-,England,1.0,112.0,179.0,,,6.0,1.0,2.0,,,M.Albrighton
+110,Trent Alexander-Arnold,Liverpool,England,1.0,1558.0,2270.0,26.0,,28.0,5.0,16.0,193.0,12.0,T.Alexander-Arnold
+111,Joachim Andersen,Crystal Palace,Denmark,1.0,1492.0,1823.0,19.0,,25.0,1.0,2.0,7.0,2.0,J.Andersen
+112,Stuart Armstrong,Southampton,Scotland,1.0,502.0,737.0,20.0,,26.0,1.0,,,2.0,S.Armstrong
+113,Adam Armstrong,Southampton,England,1.0,249.0,,20.0,,,,,14.0,,A.Armstrong
+114,Pierre-Emerick Aubameyang,Chelsea,Gabon,1.0,90.0,144.0,,,13.0,,,3.0,,P.Aubameyang
+115,Sèrge Aurier,Nottingham Forest,Cote D’Ivoire,1.0,597.0,1071.0,8.0,,,,,37.0,,S.Aurier
+116,Luke Ayling,Leeds United,England,1.0,662.0,,,,23.0,1.0,9.0,41.0,,L.Ayling
+117,Stefan Bajcetic,Liverpool,Spain,1.0,253.0,344.0,6.0,,,,6.0,,,S.Bajcetic
+118,Ricardo Pereira,Leicester City,Portugal,1.0,,,,,8.0,,,16.0,,R.Pereira
+119,Armando Broja,Chelsea,Albania,1.0,,129.0,6.0,3.0,12.0,3.0,9.0,,,A.Broja
+120,Moisés Caicedo,Brighton & Hove Albion,Ecuador,1.0,1701.0,2087.0,20.0,,28.0,,,,10.0,M.Caicedo
+121,Dominic Calvert-Lewin,Everton,England,1.0,137.0,,16.0,4.0,,14.0,,2.0,,D.Calvert-Lewin
+122,Tetê,Leicester City,Brazil,1.0,164.0,,,,9.0,4.0,,12.0,,
+123,Timothy Castagne,Leicester City,Belgium,1.0,1279.0,1949.0,15.0,2.0,30.0,5.0,,50.0,3.0,T.Castagne
+124,Jonny,Wolverhampton Wanderers,Spain,1.0,692.0,1052.0,9.0,,,1.0,,18.0,3.0,
+125,Ryan Christie,Bournemouth,Scotland,1.0,,760.0,22.0,1.0,25.0,,30.0,15.0,,R.Christie
+126,Conor Coady,Everton,England,1.0,,,4.0,1.0,22.0,,2.0,1.0,,C.Coady
+127,Séamus Coleman,-,Ireland,1.0,583.0,991.0,6.0,,22.0,,6.0,18.0,,S.Coleman
+128,Liam Cooper,Leeds United,Scotland,1.0,617.0,772.0,9.0,2.0,14.0,,,,,L.Cooper
+129,Philippe Coutinho,Aston Villa,Brazil,1.0,358.0,,21.0,1.0,20.0,,,19.0,,P.Coutinho
+130,Diego Costa,Wolverhampton Wanderers,Spain,1.0,137.0,248.0,25.0,4.0,,13.0,15.0,6.0,,D.Costa
+131,Arnaut Danjuma,Tottenham Hotspur,Netherlands,1.0,,,3.0,,,1.0,2.0,2.0,,A.Danjuma
+132,Craig Dawson,Wolverhampton Wanderers,England,1.0,936.0,1140.0,,1.0,19.0,,5.0,2.0,,C.Dawson
+133,Lucas Digne,Aston Villa,France,1.0,627.0,995.0,,,22.0,,,63.0,,L.Digne
+134,Issa Diop,Fulham,France,1.0,,1209.0,3.0,,19.0,,,,,I.Diop
+135,Matt Doherty,-,Ireland,1.0,329.0,515.0,10.0,,12.0,,,18.0,,M.Doherty
+136,Cristiano Ronaldo,-,Portugal,1.0,158.0,230.0,25.0,2.0,,8.0,3.0,3.0,2.0,C.Ronaldo
+137,Lewis Dunk,Brighton & Hove Albion,England,1.0,2499.0,2746.0,20.0,2.0,29.0,1.0,3.0,,3.0,L.Dunk
+138,Harvey Elliott,-,England,1.0,,1143.0,29.0,1.0,27.0,1.0,,,,H.Elliott
+139,Christian Eriksen,Manchester United,Denmark,1.0,984.0,1205.0,25.0,3.0,20.0,,,60.0,6.0,C.Eriksen
+140,John McGinn,Aston Villa,Scotland,1.0,779.0,1172.0,32.0,,27.0,,27.0,37.0,8.0,J.McGinn
+141,Scott McTominay,Manchester United,Scotland,1.0,,643.0,11.0,,,,,,3.0,S.McTominay
+142,Nampalys Mendy,-,Senegal,1.0,,502.0,,,,,,,,N.Mendy
+143,Yerry Mina,Everton,Colombia,1.0,173.0,209.0,3.0,,,,,,,Y.Mina
+144,Jacob Murphy,Newcastle United,England,1.0,306.0,507.0,21.0,,30.0,,,43.0,,J.Murphy
+145,Matheus Nunes,Wolverhampton Wanderers,Portugal,1.0,792.0,1203.0,24.0,,27.0,,33.0,35.0,4.0,M.Nunes
+146,Christian Nørgaard,Brentford,Denmark,1.0,770.0,1072.0,,,,,10.0,,2.0,C.Nørgaard
+147,Lewis O'Brien,-,England,1.0,,318.0,7.0,,13.0,,7.0,,,L.O'Brien
+148,Amadou Onana,Everton,Belgium,1.0,,1236.0,31.0,4.0,28.0,2.0,16.0,4.0,3.0,A.Onana
+149,Dango Ouattara,Bournemouth,Burkina Faso,1.0,,,,,,6.0,8.0,,3.0,D.Ouattara
+150,Alex Oxlade-Chamberlain,Liverpool,England,1.0,100.0,169.0,7.0,,9.0,,10.0,,2.0,A.Oxlade-Chamberlain
+151,Emerson,West Ham United,Italy,1.0,,654.0,8.0,,,,7.0,33.0,,
+152,Ivan Perisic,Tottenham Hotspur,Croatia,1.0,690.0,1254.0,26.0,4.0,29.0,5.0,12.0,178.0,,I.Perisic
+153,Pedro Porro,Tottenham Hotspur,Spain,1.0,,,12.0,,8.0,,6.0,33.0,2.0,P.Porro
+154,Dennis Praet,Leicester City,Belgium,1.0,,321.0,4.0,,,,8.0,14.0,2.0,D.Praet
+155,Christian Pulisic,Chelsea,United States,1.0,266.0,452.0,17.0,,,,13.0,16.0,,C.Pulisic
+156,Tim Ream,Fulham,United States,1.0,1776.0,2087.0,3.0,,30.0,,,4.0,,T.Ream
+157,Marc Roca,Leeds United,Spain,1.0,,,24.0,,26.0,,,57.0,3.0,M.Roca
+158,Allan Saint-Maximin,Newcastle United,France,1.0,357.0,,25.0,,20.0,,28.0,,4.0,A.Saint-Maximin
+159,Matheus Cunha,Wolverhampton Wanderers,Brazil,1.0,147.0,,22.0,,,3.0,10.0,6.0,,M.Cunha
+160,Pablo Sarabia,Wolverhampton Wanderers,Spain,1.0,267.0,,15.0,,,3.0,13.0,40.0,,P.Sarabia
+161,Fabian Schär,Newcastle United,Switzerland,1.0,1395.0,1771.0,42.0,7.0,28.0,5.0,6.0,,,F.Schär
+162,Luke Shaw,Manchester United,England,1.0,1326.0,1867.0,11.0,,,,8.0,,,L.Shaw
+163,Ellis Simms,Everton,England,1.0,,,,,9.0,,,,,E.Simms
+164,Oliver Skipp,Tottenham Hotspur,England,1.0,472.0,,7.0,,,,9.0,9.0,,O.Skipp
+165,Tomás Soucek,West Ham United,[object Object],1.0,775.0,,22.0,,29.0,,,,,T.Soucek
+166,John Stones,Manchester City,England,1.0,1225.0,1389.0,,,,,3.0,6.0,,J.Stones
+167,Sam Surridge,Nottingham Forest,England,1.0,,128.0,9.0,,,2.0,3.0,3.0,,S.Surridge
+168,James Tarkowski,Everton,England,1.0,1413.0,1863.0,25.0,,31.0,,,,3.0,J.Tarkowski
+169,James Tomkins,Crystal Palace,England,1.0,171.0,212.0,,,,,,,,J.Tomkins
+170,Kieran Trippier,Newcastle United,England,1.0,1581.0,2470.0,12.0,,30.0,7.0,6.0,302.0,14.0,K.Trippier
+171,Jamie Vardy,Leicester City,England,1.0,,,,6.0,30.0,19.0,,,,J.Vardy
+172,Joël Veltman,Brighton & Hove Albion,Netherlands,1.0,1213.0,1691.0,,,27.0,,8.0,20.0,,J.Veltman
+173,Matías Viña,Bournemouth,Uruguay,1.0,,,,,,,,2.0,,M.Viña
+174,Theo Walcott,Southampton,England,1.0,145.0,,12.0,,13.0,11.0,7.0,14.0,,T.Walcott
+175,Kyle Walker-Peters,Southampton,England,1.0,773.0,1390.0,10.0,,24.0,,36.0,44.0,,K.Walker-Peters
+176,Harry Wilson,Fulham,Wales,1.0,,328.0,,,21.0,,10.0,16.0,,H.Wilson
+177,Joe Worrall,Nottingham Forest,England,1.0,930.0,1169.0,5.0,,23.0,,,4.0,,J.Worrall
+178,Ashley Young,Aston Villa,England,1.0,779.0,1191.0,11.0,,23.0,,,35.0,,A.Young
+179,Oleksandr Zinchenko,Arsenal,Ukraine,1.0,1485.0,1881.0,26.0,,23.0,,,,3.0,O.Zinchenko
+180,Pierre-Emile Højbjerg,Tottenham Hotspur,Denmark,,2002.0,2443.0,28.0,,30.0,,35.0,14.0,7.0,P.Højbjerg
+181,Maximilian Kilman,Wolverhampton Wanderers,England,,1808.0,2184.0,10.0,,31.0,,9.0,,,M.Kilman
+182,Rúben Neves,Wolverhampton Wanderers,Portugal,,1735.0,2162.0,,,28.0,,,,,R.Neves
+183,Marc Guéhi,Crystal Palace,England,,1689.0,2048.0,9.0,1.0,30.0,,6.0,,,M.Guéhi
+184,Rúben Dias,Manchester City,Portugal,,1669.0,1833.0,10.0,3.0,22.0,,2.0,1.0,,R.Dias
+185,James Ward-Prowse,Southampton,England,,1637.0,2170.0,39.0,,31.0,,,212.0,,J.Ward-Prowse
+186,Manuel Akanji,Manchester City,Switzerland,,1630.0,1811.0,,,23.0,,2.0,,,M.Akanji
+187,Thiago Silva,Chelsea,Brazil,,1609.0,1853.0,10.0,1.0,,,,1.0,,T.Silva
+188,Pascal Groß,Brighton & Hove Albion,Germany,,1588.0,2097.0,29.0,3.0,29.0,9.0,16.0,185.0,9.0,P.Groß
+189,Wout Faes,Leicester City,Belgium,,1549.0,1848.0,9.0,,,,3.0,,2.0,W.Faes
+190,Nathan Aké,Manchester City,Netherlands,,1534.0,1787.0,,,23.0,1.0,,13.0,,N.Aké
+191,Tyrone Mings,Aston Villa,England,,1529.0,1830.0,3.0,,28.0,,6.0,,,T.Mings
+192,Ezri Konsa,Aston Villa,England,,1519.0,1841.0,,1.0,31.0,,5.0,,,E.Konsa
+193,Lisandro Martínez,Manchester United,Argentina,,1518.0,1850.0,10.0,,27.0,,9.0,,7.0,L.Martínez
+194,Bruno Fernandes,Manchester United,Portugal,,1405.0,1913.0,60.0,5.0,28.0,12.0,35.0,,22.0,B.Fernandes
+195,Adam Webster,Brighton & Hove Albion,England,,1400.0,1603.0,16.0,,23.0,,,2.0,,A.Webster
+196,Alexis Mac Allister,Brighton & Hove Albion,Argentina,,1353.0,1752.0,68.0,5.0,26.0,,28.0,,8.0,
+197,Sven Botman,Newcastle United,Netherlands,,1349.0,1633.0,16.0,2.0,28.0,,2.0,,,S.Botman
+198,Tyler Adams,Leeds United,United States,,1327.0,1699.0,4.0,,,1.0,,2.0,,T.Adams
+199,Robin Koch,Leeds United,Germany,,1326.0,1659.0,10.0,,29.0,,,,2.0,R.Koch
+200,Cristian Romero,Tottenham Hotspur,Argentina,,1286.0,1597.0,,,22.0,,10.0,,,C.Romero
+201,Andrew Robertson,Liverpool,Scotland,,1257.0,1802.0,,,26.0,6.0,7.0,149.0,,A.Robertson
+202,Fabinho,Liverpool,Brazil,,1241.0,1488.0,,,27.0,,,,3.0,
+203,Joe Gomez,Liverpool,England,,1235.0,1450.0,5.0,,20.0,1.0,,,2.0,J.Gomez
+204,Bernardo Silva,Manchester City,Portugal,,1234.0,1621.0,23.0,,28.0,2.0,30.0,61.0,2.0,B.Silva
+205,Pervis Estupiñán,Brighton & Hove Albion,Ecuador,,1205.0,1708.0,,1.0,26.0,8.0,,,2.0,P.Estupiñán
+206,David Raya,Brentford,Spain,,1202.0,1561.0,,,31.0,,,,,D.Raya
+207,Kyle Walker,Manchester City,England,,1185.0,,,,19.0,,3.0,,3.0,K.Walker
+208,Alex Iwobi,Everton,Nigeria,,1181.0,1700.0,29.0,3.0,31.0,4.0,34.0,,11.0,A.Iwobi
+209,Jordan Henderson,Liverpool,England,,1158.0,,,,26.0,,6.0,,7.0,J.Henderson
+210,Thiago,Liverpool,Spain,,997.0,1214.0,9.0,,15.0,,,3.0,8.0,
+211,Alisson,Liverpool,Brazil,,987.0,,,,29.0,,,,,
+212,Gavin Bazunu,Southampton,Ireland,,985.0,1287.0,,,31.0,,,,,G.Bazunu
+213,Idrissa Gueye,Everton,Senegal,,984.0,,,,26.0,,16.0,8.0,,I.Gueye
+214,Emiliano Martínez,Aston Villa,Argentina,,976.0,1254.0,,,29.0,,,,,E.Martínez
+215,João Moutinho,Wolverhampton Wanderers,Portugal,,963.0,1231.0,16.0,,29.0,,6.0,55.0,7.0,J.Moutinho
+216,Nélson Semedo,Wolverhampton Wanderers,Portugal,,962.0,1541.0,6.0,2.0,29.0,,16.0,45.0,4.0,N.Semedo
+217,Raphaël Varane,Manchester United,France,,946.0,,6.0,,21.0,2.0,,,,R.Varane
+218,Diogo Dalot,Manchester United,Portugal,,938.0,,19.0,2.0,20.0,,5.0,39.0,2.0,D.Dalot
+219,Jordan Pickford,Everton,England,,936.0,1242.0,,,30.0,,,,,J.Pickford
+220,Ederson,Manchester City,Brazil,,935.0,1149.0,,,30.0,,,,,
+221,Eberechi Eze,Crystal Palace,England,,820.0,,,1.0,31.0,,40.0,57.0,6.0,E.Eze
+222,Armel Bella-Kotchap,Southampton,Germany,,815.0,,,,,,6.0,,,A.Bella-Kotchap
+223,David de Gea,Manchester United,Spain,,812.0,1033.0,,,29.0,,,,,
+224,Adam Smith,Bournemouth,England,,810.0,,5.0,,30.0,,,36.0,,A.Smith
+225,Wilfred Ndidi,Leicester City,Nigeria,,800.0,1031.0,6.0,,22.0,,7.0,,,W.Ndidi
+226,Remo Freuler,Nottingham Forest,Switzerland,,799.0,1055.0,8.0,,26.0,,7.0,,,R.Freuler
+227,Philip Billing,Bournemouth,Denmark,,791.0,1215.0,31.0,,30.0,3.0,29.0,,,P.Billing
+228,Danny Ward,Leicester City,Wales,,786.0,1074.0,,,26.0,,,,,D.Ward
+229,Rico Henry,Brentford,England,,760.0,,,3.0,30.0,,40.0,66.0,4.0,R.Henry
+230,Jack Harrison,Leeds United,England,,749.0,,32.0,4.0,28.0,3.0,48.0,139.0,4.0,J.Harrison
+231,Illan Meslier,Leeds United,France,,746.0,,,,30.0,,,,,I.Meslier
+232,Roméo Lavia,Southampton,Belgium,,740.0,1033.0,9.0,,22.0,,25.0,,4.0,R.Lavia
+233,Matty Cash,Aston Villa,Poland,,736.0,1186.0,,,23.0,,7.0,46.0,2.0,M.Cash
+234,Kai Havertz,Chelsea,Germany,,733.0,1171.0,62.0,13.0,29.0,27.0,34.0,12.0,2.0,K.Havertz
+235,Ruben Loftus-Cheek,Chelsea,England,,726.0,997.0,9.0,,20.0,,,19.0,,R.Loftus-Cheek
+236,Joël Matip,Liverpool,Cameroon,,723.0,,,,,,,,,J.Matip
+237,Trevoh Chalobah,-,England,,719.0,889.0,5.0,1.0,,,,3.0,,T.Chalobah
+238,Jacob Ramsey,Aston Villa,England,,716.0,,22.0,,28.0,,28.0,,2.0,J.Ramsey
+239,Kepa Arrizabalaga,Chelsea,Spain,,715.0,967.0,,,23.0,,,,,K.Arrizabalaga
+240,Aaron Ramsdale,Arsenal,England,,704.0,974.0,,,30.0,,,,,A.Ramsdale
+241,Leandro Trossard,Arsenal,Belgium,,704.0,,,,28.0,7.0,39.0,,12.0,L.Trossard
+242,Vicente Guaita,Crystal Palace,Spain,,701.0,992.0,,,27.0,,,,,V.Guaita
+243,Wesley Fofana,Chelsea,France,,700.0,,8.0,1.0,12.0,1.0,6.0,,,W.Fofana
+244,Lloyd Kelly,Bournemouth,England,,699.0,963.0,3.0,,,,2.0,,2.0,L.Kelly
+245,Joel Ward,Crystal Palace,England,,697.0,1071.0,,,21.0,,6.0,,,J.Ward
+246,Kaoru Mitoma,Brighton & Hove Albion,Japan,,694.0,1031.0,31.0,5.0,,5.0,,,3.0,K.Mitoma
+247,César Azpilicueta,Chelsea,Spain,,688.0,974.0,,,19.0,,,18.0,,C.Azpilicueta
+248,James Justin,Leicester City,England,,682.0,1021.0,5.0,,14.0,2.0,6.0,,,J.Justin
+249,Robert Sánchez,Brighton & Hove Albion,Spain,,674.0,,,,23.0,,,,,R.Sánchez
+250,Jonny Evans,Leicester City,Northern Ireland,,673.0,764.0,,,,,,,,J.Evans
+251,Scott McKenna,Nottingham Forest,Scotland,,667.0,,,,,,,,,S.McKenna
+252,Nathaniel Clyne,Crystal Palace,England,,660.0,996.0,,,22.0,,,,,N.Clyne
+253,Ibrahima Konaté,Liverpool,France,,660.0,,,,,,2.0,,,I.Konaté
+254,Jan Bednarek,Southampton,Poland,,658.0,,6.0,,,,,1.0,,J.Bednarek
+255,Benoît Badiashile,Chelsea,France,,649.0,738.0,5.0,,9.0,,,1.0,,B.Badiashile
+256,Willian,Fulham,Brazil,,644.0,894.0,30.0,2.0,,,,34.0,3.0,
+257,Levi Colwill,Brighton & Hove Albion,England,,641.0,714.0,3.0,1.0,,,2.0,,,L.Colwill
+258,Jordan Ayew,Crystal Palace,Ghana,,628.0,1191.0,22.0,,31.0,,62.0,38.0,,J.Ayew
+259,Lewis Cook,Bournemouth,England,,627.0,,5.0,,23.0,,,38.0,,L.Cook
+260,Son Heung-Min,Tottenham Hotspur,South Korea,,626.0,,67.0,5.0,29.0,12.0,45.0,,4.0,S.Heung-Min
+261,Hugo Lloris,Tottenham Hotspur,France,,604.0,,,,,,,,,H.Lloris
+262,Vladimír Coufal,West Ham United,[object Object],,601.0,,5.0,,20.0,,12.0,,,V.Coufal
+263,Boubakary Soumaré,Leicester City,France,,597.0,756.0,,,19.0,,13.0,2.0,,B.Soumaré
+264,Aymeric Laporte,Manchester City,Spain,,578.0,653.0,9.0,1.0,8.0,,,,,A.Laporte
+265,Neco Williams,Nottingham Forest,Wales,,571.0,,22.0,,28.0,2.0,,,3.0,N.Williams
+266,Dwight McNeil,Everton,England,,569.0,,29.0,,29.0,,30.0,141.0,3.0,D.McNeil
+267,Yves Bissouma,Tottenham Hotspur,Mali,,567.0,658.0,5.0,,20.0,1.0,5.0,2.0,,Y.Bissouma
+268,Dean Henderson,Nottingham Forest,England,,562.0,772.0,,,,,,,,D.Henderson
+269,Lukasz Fabianski,West Ham United,Poland,,561.0,,,,27.0,,,,,L.Fabianski
+270,Daniel Podence,Wolverhampton Wanderers,Portugal,,553.0,907.0,39.0,3.0,28.0,4.0,29.0,52.0,8.0,D.Podence
+271,Nick Pope,Newcastle United,England,,549.0,,,,30.0,,,,,N.Pope
+272,Neto,Bournemouth,Brazil,,525.0,760.0,,,,,,,,
+273,Renan Lodi,Nottingham Forest,Brazil,,524.0,951.0,11.0,1.0,20.0,,9.0,56.0,,R.Lodi
+274,Harry Souttar,Leicester City,Australia,,523.0,637.0,,,10.0,,,,,H.Souttar
+275,Josh Dasilva,Brentford,England,,517.0,,15.0,1.0,30.0,,27.0,,,J.Dasilva
+276,Wilfried Zaha,Crystal Palace,Cote D’Ivoire,,516.0,,,5.0,24.0,13.0,80.0,,3.0,W.Zaha
+277,Pablo Fornals,West Ham United,Spain,,511.0,706.0,,,,1.0,12.0,44.0,4.0,P.Fornals
+278,Mohamed Elyounoussi,Southampton,Norway,,508.0,,31.0,3.0,27.0,3.0,34.0,,6.0,M.Elyounoussi
+279,Aaron Hickey,Brentford,Scotland,,508.0,,,,19.0,,9.0,20.0,,A.Hickey
+280,Marcus Tavernier,Bournemouth,England,,504.0,965.0,33.0,,,4.0,35.0,,5.0,M.Tavernier
+281,Ainsley Maitland-Niles,Southampton,England,,495.0,773.0,,,,,12.0,13.0,,A.Maitland-Niles
+282,Ryan Yates,Nottingham Forest,England,,489.0,729.0,25.0,,21.0,,,6.0,,R.Yates
+283,Tyrell Malacia,Manchester United,Netherlands,,486.0,764.0,5.0,,,2.0,,13.0,,T.Malacia
+284,Raheem Sterling,Chelsea,England,,484.0,,28.0,7.0,,9.0,42.0,36.0,,R.Sterling
+285,Jadon Sancho,Manchester United,England,,482.0,670.0,12.0,,,5.0,,13.0,3.0,J.Sancho
+286,Duje Caleta-Car,Southampton,Croatia,,474.0,,3.0,1.0,,,,1.0,,D.Caleta-Car
+287,James Milner,Liverpool,England,,474.0,723.0,6.0,,22.0,,12.0,46.0,,J.Milner
+288,Jordan Zemura,Bournemouth,Zimbabwe,,457.0,,4.0,,,,16.0,18.0,,J.Zemura
+289,Steve Cook,Nottingham Forest,England,,455.0,,3.0,,12.0,,2.0,1.0,,S.Cook
+290,Jack Stephens,Bournemouth,England,,455.0,,,,,,,2.0,,J.Stephens
+291,Victor Lindelöf,Manchester United,Sweden,,398.0,467.0,,,,,,,,V.Lindelöf
+292,Ibrahima Diallo,Southampton,France,,397.0,,6.0,,,,9.0,,,I.Diallo
+293,Ben Johnson,West Ham United,England,,394.0,,,,13.0,,6.0,14.0,,B.Johnson
+294,Rico Lewis,Manchester City,England,,394.0,497.0,3.0,,10.0,,,,,R.Lewis
+295,Nathan Patterson,Everton,Scotland,,394.0,732.0,8.0,,15.0,,9.0,,,N.Patterson
+296,Felipe,Nottingham Forest,Brazil,,392.0,,,,9.0,1.0,2.0,,,
+297,Junior Firpo,Leeds United,Spain,,390.0,642.0,,,14.0,,7.0,,,J.Firpo
+298,Luke Thomas,Leicester City,England,,387.0,,,,,,,6.0,3.0,L.Thomas
+299,Weston McKennie,Leeds United,United States,,384.0,,6.0,,,,16.0,3.0,3.0,W.McKennie
+300,Albert Sambi Lokonga,Crystal Palace,Belgium,,379.0,474.0,,,14.0,,6.0,,3.0,
+301,Brennan Johnson,Nottingham Forest,Wales,,374.0,748.0,,4.0,30.0,16.0,,54.0,,B.Johnson
+302,Orel Mangala,-,Belgium,,355.0,483.0,7.0,,19.0,,7.0,,,O.Mangala
+303,Konstantinos Tsimikas,Liverpool,Greece,,350.0,,7.0,,,,7.0,67.0,,K.Tsimikas
+304,Zanka,Brentford,Denmark,,330.0,461.0,3.0,1.0,14.0,2.0,,,,
+305,Crysencio Summerville,Leeds United,Netherlands,,330.0,599.0,24.0,,,8.0,30.0,14.0,,C.Summerville
+306,Danny Welbeck,Brighton & Hove Albion,England,,323.0,,,10.0,23.0,3.0,,,5.0,D.Welbeck
+307,Toti,Wolverhampton Wanderers,Portugal,,316.0,,,,10.0,,,,,
+308,Darwin Núñez,Liverpool,Uruguay,,316.0,607.0,79.0,18.0,23.0,16.0,23.0,16.0,2.0,D.Núñez
+309,Pontus Jansson,Brentford,Sweden,,315.0,,4.0,,,,,,,P.Jansson
+310,Jonjo Shelvey,Nottingham Forest,England,,314.0,,6.0,,,,,13.0,3.0,J.Shelvey
+311,Lyanco,Southampton,Brazil,,312.0,454.0,,,14.0,,,3.0,,
+312,Kieffer Moore,Bournemouth,Wales,,309.0,510.0,,3.0,,,31.0,6.0,,K.Moore
+313,Kieran Tierney,Arsenal,Scotland,,300.0,,6.0,,21.0,,,16.0,,K.Tierney
+314,Kristoffer Ajer,Brentford,Norway,,294.0,,,,9.0,,8.0,6.0,,K.Ajer
+315,Keylor Navas,Nottingham Forest,Costa Rica,,290.0,,,,10.0,,,,,K.Navas
+316,Leander Dendoncker,Aston Villa,Belgium,,287.0,,5.0,1.0,20.0,,,3.0,,L.Dendoncker
+317,Jesse Lingard,Nottingham Forest,England,,282.0,,10.0,,,2.0,10.0,,,J.Lingard
+318,Julián Álvarez,Manchester City,Argentina,,276.0,,31.0,3.0,23.0,2.0,,,,J.Álvarez
+319,Mark Travers,Bournemouth,Ireland,,276.0,,,,,,,,,M.Travers
+320,Hakim Ziyech,Chelsea,Morocco,,276.0,469.0,,,14.0,3.0,13.0,57.0,4.0,H.Ziyech
+321,Harry Toffolo,Nottingham Forest,England,,270.0,482.0,6.0,,15.0,,6.0,,,H.Toffolo
+322,Mikkel Damsgaard,Brentford,Denmark,,261.0,,6.0,1.0,19.0,,,19.0,4.0,M.Damsgaard
+323,Victor Kristiansen,Leicester City,Denmark,,261.0,454.0,3.0,,8.0,,5.0,,,V.Kristiansen
+324,Michael Keane,Everton,England,,253.0,340.0,9.0,,8.0,,,,,M.Keane
+325,Marcel Sabitzer,Manchester United,Austria,,253.0,335.0,9.0,,8.0,,5.0,4.0,,M.Sabitzer
+326,Pedro Neto,Wolverhampton Wanderers,Portugal,,251.0,,,,13.0,2.0,9.0,53.0,,P.Neto
+327,Joe Rothwell,Bournemouth,England,,249.0,,,,15.0,,,,2.0,J.Rothwell
+328,Matt Targett,Newcastle United,England,,249.0,,,,13.0,,,,,M.Targett
+329,Gonçalo Guedes,-,Portugal,,172.0,309.0,,,13.0,5.0,7.0,,,G.Guedes
+330,N'Golo Kanté,Chelsea,France,,172.0,228.0,4.0,,,,3.0,7.0,,N.Kanté
+331,Lewis Hall,Chelsea,England,,171.0,,5.0,,,,6.0,9.0,,L.Hall
+332,Neeskens Kebano,Fulham,DR Congo,,168.0,315.0,9.0,1.0,,2.0,10.0,20.0,,N.Kebano
+333,Naby Keïta,Liverpool,Guinea,,164.0,221.0,10.0,,8.0,,7.0,,,N.Keïta
+334,Ryan Fredericks,Bournemouth,England,,163.0,,,,,,3.0,15.0,,R.Fredericks
+335,Raúl Jiménez,Wolverhampton Wanderers,Mexico,,163.0,,20.0,4.0,13.0,9.0,,,,R.Jiménez
+336,Anthony Martial,Manchester United,France,,162.0,236.0,,5.0,,3.0,6.0,3.0,3.0,A.Martial
+337,Calum Chambers,Aston Villa,England,,161.0,200.0,,,,,,,,C.Chambers
+338,João Gomes,Wolverhampton Wanderers,Brazil,,158.0,238.0,3.0,,6.0,,2.0,6.0,,J.Gomes
+339,Frank Onyeka,Brentford,Nigeria,,158.0,,3.0,,14.0,,6.0,,,F.Onyeka
+340,Billy Gilmour,Brighton & Hove Albion,Scotland,,153.0,173.0,,,7.0,,,,,B.Gilmour
+341,Ayoze Pérez,-,Spain,,152.0,,8.0,,8.0,,,17.0,,A.Pérez
+342,Mason Holgate,Everton,England,,150.0,218.0,3.0,,,,,,,M.Holgate
+343,Samuel Edozie,Southampton,England,,145.0,304.0,8.0,1.0,,1.0,,,,S.Edozie
+344,Wout Weghorst,Manchester United,Netherlands,,145.0,228.0,10.0,,10.0,4.0,10.0,,3.0,W.Weghorst
+345,Chris Richards,Crystal Palace,United States,,143.0,212.0,4.0,,8.0,,,,,C.Richards
+346,Sasa Lukic,Fulham,Serbia,,142.0,168.0,3.0,,,,,,,S.Lukic
+347,Manor Solomon,Fulham,Israel,,142.0,234.0,7.0,,,,10.0,4.0,,M.Solomon
+348,Jack Colback,Nottingham Forest,England,,141.0,199.0,,,,,,1.0,,J.Colback
+349,Sergio Gómez,Manchester City,Spain,,141.0,182.0,4.0,,8.0,,2.0,,,S.Gómez
+350,Moussa Niakhaté,Nottingham Forest,Senegal,,141.0,220.0,3.0,,,,,,,M.Niakhaté
+351,Daniel Iversen,Leicester City,Denmark,,139.0,196.0,,,,,,,,D.Iversen
+352,Mateusz Klich,-,Poland,,136.0,200.0,4.0,,14.0,,,8.0,,M.Klich
+353,Hamed Traorè,Bournemouth,Cote D’Ivoire,,135.0,,6.0,,7.0,,13.0,41.0,5.0,H.Traorè
+354,Ben Pearson,-,England,,134.0,164.0,,,7.0,,,,,B.Pearson
+355,Kalvin Phillips,Manchester City,England,,134.0,157.0,,,7.0,,,,,K.Phillips
+356,Fraser Forster,Tottenham Hotspur,England,,131.0,202.0,,,7.0,,,,,F.Forster
+357,James Garner,Everton,England,,128.0,182.0,6.0,,9.0,1.0,3.0,16.0,,J.Garner
+358,Sam Greenwood,Leeds United,England,,125.0,229.0,11.0,,15.0,,5.0,36.0,,S.Greenwood
+359,Diego Carlos,Aston Villa,Brazil,,125.0,140.0,4.0,,,,,,,D.Carlos
+360,Anthony Elanga,Manchester United,Sweden,,121.0,209.0,10.0,2.0,,3.0,7.0,7.0,,A.Elanga
+361,Boubacar Traoré,Wolverhampton Wanderers,Mali,,121.0,166.0,,,8.0,,3.0,,,B.Traoré
+362,Carney Chukwuemeka,Chelsea,England,,114.0,175.0,4.0,,,1.0,,3.0,,C.Chukwuemeka
+363,Pape Sarr,Tottenham Hotspur,Senegal,,114.0,149.0,,,8.0,,,,,P.Sarr
+364,Mykhailo Mudryk,Chelsea,Ukraine,,113.0,228.0,9.0,4.0,10.0,,9.0,,,M.Mudryk
+365,Ryan Fraser,Newcastle United,Scotland,,104.0,159.0,6.0,,8.0,1.0,,13.0,,R.Fraser
+366,Jan Paul van Hecke,Brighton & Hove Albion,Netherlands,,100.0,,,,,,,,,
+367,Manuel Lanzini,West Ham United,Argentina,,99.0,,,,7.0,,,,,M.Lanzini
+368,Sékou Mara,Southampton,France,,98.0,,,,,3.0,,,,S.Mara
+369,Danilo,Nottingham Forest,Brazil,,94.0,169.0,6.0,,6.0,1.0,,,,
+370,Robin Olsen,Aston Villa,Sweden,,94.0,128.0,,,,,,,,R.Olsen
+371,Cédric Soares,Fulham,Portugal,,93.0,143.0,,,6.0,,,20.0,,C.Soares
+372,Elliot Anderson,Newcastle United,Scotland,,93.0,174.0,,,15.0,1.0,8.0,,,E.Anderson
+373,Jack Stacey,Bournemouth,England,,93.0,175.0,,,9.0,,,,,J.Stacey
+374,James Bree,Southampton,England,,89.0,143.0,,,,,,12.0,,J.Bree
+375,Japhet Tanganga,Tottenham Hotspur,England,,89.0,,,,,,,,,J.Tanganga
+376,Noni Madueke,Chelsea,England,,86.0,155.0,4.0,,,,5.0,6.0,,N.Madueke
+377,Çaglar Söyüncü,Leicester City,[object Object],,86.0,,,,,,,,,Ç.Söyüncü
+378,Cole Palmer,Manchester City,England,,83.0,127.0,,,,,,4.0,,C.Palmer
+379,Joseph Hodge,Wolverhampton Wanderers,Ireland,,82.0,,,,,,2.0,,,J.Hodge
+380,Nathaniel Phillips,Liverpool,England,,82.0,,,,,,,,,N.Phillips
+381,Jamaal Lascelles,Newcastle United,England,,79.0,,,,,,,,,J.Lascelles
+382,Alphonse Aréola,West Ham United,France,,77.0,,,,,,,,,A.Aréola
+383,Keane Lewis-Potter,Brentford,England,,76.0,154.0,7.0,,10.0,,8.0,8.0,,K.Lewis-Potter
+384,Enock Mwepu,-,Zambia,,75.0,125.0,,,,2.0,5.0,3.0,,E.Mwepu
+385,Joe Whitworth,Crystal Palace,England,,75.0,,,,,,,,,J.Whitworth
+386,Antonee Robinson,Fulham,United States,,,1836.0,,,27.0,3.0,,111.0,,A.Robinson
+387,Mohammed Salisu,Southampton,Ghana,,,1539.0,,,,,9.0,13.0,,M.Salisu
+388,Marc Cucurella,Chelsea,Spain,,,1535.0,,,,1.0,6.0,44.0,,M.Cucurella
+389,Kenny Tete,Fulham,Netherlands,,,1533.0,10.0,,,,,,,K.Tete
+390,Vitalii Mykolenko,Everton,Ukraine,,,1503.0,10.0,,30.0,,8.0,49.0,,V.Mykolenko
+391,Tyrick Mitchell,Crystal Palace,England,,,1481.0,4.0,,29.0,2.0,,47.0,,T.Mitchell
+392,Dan Burn,Newcastle United,England,,,1677.0,,1.0,30.0,5.0,7.0,14.0,,D.Burn
+393,Solly March,Brighton & Hove Albion,England,,,1650.0,67.0,10.0,29.0,12.0,30.0,145.0,2.0,S.March
+394,Reece James,Chelsea,England,,,1245.0,16.0,,,4.0,,,,R.James
+395,Bernd Leno,Fulham,Germany,,,1241.0,,,28.0,,,,,B.Leno
+396,José Sá,Wolverhampton Wanderers,Portugal,,,1220.0,,,31.0,,,,,J.Sá
+397,Nathan Collins,Wolverhampton Wanderers,Ireland,,,1209.0,,,,1.0,6.0,,,N.Collins
+398,Emiliano Buendía,Aston Villa,Argentina,,,1206.0,36.0,1.0,31.0,1.0,45.0,17.0,8.0,E.Buendía
+399,Thilo Kehrer,West Ham United,Germany,,,1165.0,,1.0,,,5.0,20.0,,T.Kehrer
+400,Enzo Fernández,Chelsea,Argentina,,,1039.0,12.0,,,1.0,,7.0,4.0,E.Fernández
+401,Álex Moreno,Aston Villa,Spain,,,746.0,10.0,,13.0,,13.0,,,Á.Moreno
+402,Ché Adams,Southampton,Scotland,,,728.0,42.0,10.0,25.0,11.0,23.0,,6.0,C.Adams
+403,Hugo Bueno,Wolverhampton Wanderers,Spain,,,725.0,4.0,,,,9.0,47.0,,H.Bueno
+404,Aaron Wan-Bissaka,Manchester United,England,,,616.0,5.0,,,,,9.0,,A.Wan-Bissaka
+405,Diego Llorente,-,Spain,,,513.0,6.0,,8.0,,,,,D.Llorente
+406,Harry Maguire,Manchester United,England,,,513.0,,,,,,,,H.Maguire
+407,Michail Antonio,-,Jamaica,,,511.0,27.0,,26.0,11.0,34.0,,,M.Antonio
+408,Cheikhou Kouyaté,Nottingham Forest,Senegal,,,339.0,6.0,,15.0,,5.0,,,C.Kouyaté
+409,Angelo Ogbonna,West Ham United,Italy,,,335.0,3.0,,,,3.0,,,A.Ogbonna
+410,Willy Boly,Nottingham Forest,Cote D’Ivoire,,,334.0,,,8.0,3.0,,,,W.Boly
+411,Shandon Baptiste,Brentford,Grenada,,,329.0,3.0,,,1.0,7.0,,2.0,S.Baptiste
+412,Tom Davies,Everton,England,,,328.0,9.0,2.0,19.0,1.0,,2.0,3.0,T.Davies
+413,Édouard Mendy,Chelsea,Senegal,,,311.0,,,9.0,,,,,É.Mendy
+414,Fábio Vieira,Arsenal,Portugal,,,308.0,,,,,7.0,14.0,,F.Vieira
+415,Curtis Jones,Liverpool,England,,,297.0,4.0,,9.0,,13.0,,2.0,C.Jones
+416,Flynn Downes,West Ham United,England,,,244.0,3.0,,15.0,,,3.0,,F.Downes
+417,Rob Holding,Arsenal,England,,,240.0,,,10.0,,,,,R.Holding
+418,Denis Zakaria,Chelsea,Switzerland,,,238.0,,,7.0,,9.0,,,D.Zakaria
+419,Jason Steele,Brighton & Hove Albion,England,,,224.0,,,,,,,,J.Steele
+420,Kevin Schade,Brentford,Germany,,,167.0,6.0,,,3.0,,6.0,,K.Schade
+421,Joe Gelhardt,-,England,,,133.0,10.0,1.0,15.0,,7.0,,,J.Gelhardt
+422,Paul Onuachu,Southampton,Nigeria,,,133.0,7.0,,8.0,4.0,8.0,,,P.Onuachu
+423,Georginio Rutter,Leeds United,France,,,128.0,,,9.0,,12.0,,,G.Rutter
+424,Kevin Mbabu,-,Switzerland,,,120.0,,,,,,7.0,,K.Mbabu
+425,Jeremy Sarmiento,Brighton & Hove Albion,Ecuador,,,116.0,5.0,,9.0,,7.0,3.0,,J.Sarmiento
+426,Gustavo Scarpa,Nottingham Forest,Brazil,,,115.0,6.0,,6.0,,,,,G.Scarpa
+427,Eddie Nketiah,Arsenal,England,,,,40.0,10.0,23.0,8.0,,,,E.Nketiah
+428,Patrick Bamford,Leeds United,England,,,,38.0,10.0,22.0,10.0,15.0,2.0,,P.Bamford
+429,Kelechi Iheanacho,Leicester City,Nigeria,,,,32.0,5.0,,9.0,27.0,6.0,4.0,K.Iheanacho
+430,Neal Maupay,Everton,France,,,,30.0,7.0,22.0,,,,,N.Maupay
+431,Cheick Doucouré,Crystal Palace,Mali,,,,29.0,,28.0,,,,2.0,C.Doucouré
+432,Sean Longstaff,Newcastle United,England,,,,27.0,5.0,30.0,4.0,27.0,,7.0,S.Longstaff
+433,Mateo Kovacic,Chelsea,Croatia,,,,23.0,,23.0,,,,8.0,M.Kovacic
+434,Richarlison,Tottenham Hotspur,Brazil,,,,20.0,4.0,20.0,4.0,15.0,13.0,4.0,
+435,Clément Lenglet,Tottenham Hotspur,France,,,,11.0,,,,,15.0,,C.Lenglet
+436,Kamaldeen Sulemana,Southampton,Ghana,,,,17.0,,,2.0,,15.0,,K.Sulemana
+437,Diogo Jota,Liverpool,Portugal,,,,16.0,6.0,13.0,3.0,,,,D.Jota
+438,Rodrigo Bentancur,Tottenham Hotspur,Uruguay,,,,15.0,1.0,,,,16.0,3.0,R.Bentancur
+439,Mario Lemina,Wolverhampton Wanderers,Gabon,,,,7.0,,,,8.0,,,M.Lemina
+440,Chris Mepham,Bournemouth,Wales,,,,7.0,,23.0,,3.0,,,C.Mepham
+441,Maximilian Wöber,Leeds United,Austria,,,,7.0,,10.0,,,,,M.Wöber
+442,Daniel Amartey,-,Ghana,,,,6.0,,20.0,,,,2.0,D.Amartey
+443,Ben Godfrey,Everton,England,,,,6.0,1.0,,1.0,2.0,7.0,,B.Godfrey
+444,Maxwel Cornet,West Ham United,Cote D’Ivoire,,,,5.0,2.0,8.0,3.0,2.0,3.0,,M.Cornet
+445,Tariq Lamptey,Brighton & Hove Albion,Ghana,,,,5.0,,20.0,,,,,T.Lamptey
+446,Luka Milivojevic,Crystal Palace,Serbia,,,,5.0,,15.0,,6.0,,,L.Milivojevic
+447,André Ayew,Nottingham Forest,Ghana,,,,4.0,,9.0,1.0,,1.0,,A.Ayew
+448,Boubacar Kamara,Aston Villa,France,,,,4.0,,20.0,,,,2.0,B.Kamara
+449,Salomón Rondón,-,Venezuela,,,,4.0,,7.0,2.0,,,,S.Rondón
+450,Davinson Sánchez,Tottenham Hotspur,Colombia,,,,4.0,,15.0,,,,,D.Sánchez
+451,Emile Smith Rowe,Arsenal,England,,,,4.0,,9.0,,3.0,,,
+452,Naouirou Ahamada,Crystal Palace,France,,,,3.0,,7.0,2.0,,2.0,,N.Ahamada
+453,Moussa Djenepo,Southampton,Mali,,,,3.0,,14.0,,,12.0,,M.Djenepo
+454,David Datro Fofana,Chelsea,Cote D’Ivoire,,,,3.0,,,1.0,3.0,1.0,,
+455,Will Hughes,Crystal Palace,England,,,,3.0,1.0,,,6.0,,,W.Hughes
+456,Deniz Undav,Brighton & Hove Albion,Germany,,,,,5.0,13.0,4.0,,,,D.Undav
+457,Jhon Durán,Aston Villa,Colombia,,,,,1.0,8.0,,2.0,,,J.Durán
+458,Sasa Kalajdzic,Wolverhampton Wanderers,Austria,,,,,1.0,,,,,,S.Kalajdzic
+459,Tom Cairney,Fulham,Scotland,,,,,,25.0,,,20.0,2.0,T.Cairney
+460,Takehiro Tomiyasu,Arsenal,Japan,,,,,,21.0,,,,,T.Tomiyasu
+461,Antoine Semenyo,Bournemouth,Ghana,,,,,,9.0,,6.0,,,A.Semenyo
+462,Donny van de Beek,Manchester United,Netherlands,,,,,,7.0,,,,,
+463,Cameron Archer,-,England,,,,,,6.0,1.0,,1.0,,C.Archer
+464,Siriki Dembélé,-,Scotland,,,,,,6.0,,5.0,3.0,,S.Dembélé
+465,Aaron Cresswell,West Ham United,England,,,,,,,1.0,6.0,111.0,,A.Cresswell
+466,Bryan Gil,-,Spain,,,,,,,1.0,3.0,,,B.Gil
+467,Mads Roerslev,Brentford,Denmark,,,,,,,,9.0,19.0,2.0,M.Roerslev
+468,Chem Campbell,-,Wales,,,,,,,,6.0,,,C.Campbell
+469,Mateo Joseph Fernández,Leeds United,Spain,,,,,,,,3.0,,,
+470,James McArthur,Crystal Palace,Scotland,,,,,,,,3.0,,,J.McArthur
+471,Lucas Moura,Tottenham Hotspur,Brazil,,,,,,,,3.0,6.0,,L.Moura
+472,Yan Valery,-,Tunisia,,,,,,,,3.0,,,Y.Valery
+473,Saman Ghoddos,Brentford,Iran,,,,,,,,,6.0,,S.Ghoddos
+474,Sergi Canós,-,Spain,,,,,,,,,3.0,,S.Canós
+475,Malcolm Ebiowei,-,England,,,,,,,,,3.0,,M.Ebiowei
+476,Jay Stansfield,-,England,,,,,,,,,3.0,,J.Stansfield
+477,Harvey White,-,England,,,,,,,,,3.0,,H.White
+478,Rúben Vinagre,Everton,Portugal,,,,,,,,,2.0,,R.Vinagre
+479,Giulian Biancone,Nottingham Forest,France,,,,,,,,,1.0,,G.Biancone
+480,Facundo Buonanotte,Brighton & Hove Albion,Argentina,,,,,,,,,1.0,,F.Buonanotte
+481,Cody Drameh,-,England,,,,,,,,,1.0,,C.Drameh
