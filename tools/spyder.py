@@ -10,7 +10,7 @@ from matplotlib.transforms import Affine2D
 
 import pandas as pd
 
-def spyder(players, df, title, valid_years=[]):
+def spyder(players, df, title, valid_years=[], restrict=True):
     def radar_factory(num_vars, frame='circle'):
         """Create a radar chart with `num_vars` axes.
 
@@ -115,14 +115,20 @@ def spyder(players, df, title, valid_years=[]):
     soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
 
     player_dfs = [df[df['Player']==name] for name in players]
-    if len(valid_years) == 0:
-        valid_years = set(player_dfs[0]["Year"].to_list())
-        for s in player_dfs[1:]:
-            valid_years.intersection_update(s["Year"])
-    print(valid_years)
 
-    for i in range(len(player_dfs)):
-        player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years)]
+    if restrict:
+        if len(valid_years) == 0:
+            valid_years = set(player_dfs[0]["Year"].to_list())
+            for s in player_dfs[1:]:
+                valid_years.intersection_update(s["Year"])
+        print(valid_years)
+
+        for i in range(len(players)):
+            player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years)]
+    else:
+        if len(valid_years) != 0:
+            for i in range(len(players)):
+                player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years[i])]
 
     """
     stats = {
@@ -137,7 +143,7 @@ def spyder(players, df, title, valid_years=[]):
     #    print(val)
 
     #data = [[name for name in stats.keys()], ('Three Players', [[num for num in stats.values()]])]
-    data = [soccer, (title, [[norm(sum(p_df[col])/len(p_df[col]), max(df[col]), min(df[col])) for col in soccer] for p_df in player_dfs])]
+    data = [soccer, (title, [[norm(sum(p_df[col])/len(p_df[col]), max(df[col]), 0) for col in soccer] for p_df in player_dfs])]
 
     """
     data = [['Percentile of hours studying', 'Percentile of classes attended',
