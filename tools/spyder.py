@@ -1,3 +1,4 @@
+import pandas as pd
 import numpy as np
 
 import matplotlib.pyplot as plt
@@ -7,8 +8,6 @@ from matplotlib.projections.polar import PolarAxes
 from matplotlib.projections import register_projection
 from matplotlib.spines import Spine
 from matplotlib.transforms import Affine2D
-
-import pandas as pd
 
 def spyder(players, df, title, valid_years=[], restrict=True):
     def radar_factory(num_vars, frame='circle'):
@@ -130,30 +129,7 @@ def spyder(players, df, title, valid_years=[], restrict=True):
             for i in range(len(players)):
                 player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years[i])]
 
-    """
-    stats = {
-        'Goals': norm(30, 50, 0),
-        'Assists': norm(9, 21, 0),
-        'Minutes Played': norm(2387, 3780, 1),
-        'Matches Played': norm(27, 42, 1)
-    }
-    #"""
-
-    #for val in stats.values():
-    #    print(val)
-
-    #data = [[name for name in stats.keys()], ('Three Players', [[num for num in stats.values()]])]
     data = [soccer, (title, [[norm(sum(p_df[col])/len(p_df[col]), max(df[col]), 0) for col in soccer] for p_df in player_dfs])]
-
-    """
-    data = [['Percentile of hours studying', 'Percentile of classes attended',
-             'Percentile of final exam grade', 'Percentile of midterm grade',
-             'Percentile of assignments completed'],
-            ('Basecase', [
-                [53, 44, 22, 22, 0],
-                [100, 0, 100, 100, 100],
-                [78, 78, 89, 89, 33],])]
-    #"""
 
     N = len(data[0])
     theta = radar_factory(N, frame='polygon')
