@@ -10,7 +10,7 @@ from matplotlib.transforms import Affine2D
 
 import pandas as pd
 
-def spyder(players, df, title):
+def spyder(players, df, title, valid_years=[]):
     def radar_factory(num_vars, frame='circle'):
         """Create a radar chart with `num_vars` axes.
 
@@ -110,13 +110,15 @@ def spyder(players, df, title):
     def norm(num, big, smol):
         return (num-smol)/(big-smol)
 
+    plt.style.use('dark_background')
+
     soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
 
     player_dfs = [df[df['Player']==name] for name in players]
-    valid_years = set(player_dfs[0]["Year"].to_list())
-
-    for s in player_dfs[1:]:
-        valid_years.intersection_update(s["Year"])
+    if len(valid_years) == 0:
+        valid_years = set(player_dfs[0]["Year"].to_list())
+        for s in player_dfs[1:]:
+            valid_years.intersection_update(s["Year"])
     print(valid_years)
 
     for i in range(len(player_dfs)):
