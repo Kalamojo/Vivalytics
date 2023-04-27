@@ -5,7 +5,7 @@ from tools.spyder import spyder
 stm.title("Stats Comparison")
 stm.sidebar.success("You are currently viewing The Player Comparison page")
 
-df = pd.read_csv("./resources/standard_stats_5.csv")
+df = pd.read_csv("./resources/standard_stats_6.csv")
 
 playerList = stm.multiselect("Enter Player Names", sorted(list(set(df["Player"]))))
 #player2 = stm.text_input("Enter the second player name")
