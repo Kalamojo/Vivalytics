@@ -15,10 +15,12 @@ if playerList:
 		valid_years = set(player_dfs[0]["Year"].to_list())
 		for s in player_dfs[1:]:
 			valid_years.intersection_update(s["Year"])
-		years = stm.slider('Select Year Range', min(valid_years), max(valid_years), value=[min(valid_years), max(valid_years)])
-		#print(years)
-		fig = spyder(playerList, df, "Stats Compare", set([year for year in range(years[0], years[1]+1)]))
-		stm.pyplot(fig)
+		try:
+			years = stm.slider('Select Year Range', min(valid_years), max(valid_years), value=[min(valid_years), max(valid_years)])
+			fig = spyder(playerList, df, "Stats Compare", set([year for year in range(years[0], years[1]+1)]))
+			stm.pyplot(fig)
+		except:
+			stm.error("Players have an incompatable time range")
 			
 	except:
 		stm.error("Player not found")
