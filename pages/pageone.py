@@ -2,7 +2,6 @@ import streamlit as stm
 import pandas as pd
 import bs4
 import requests
-import mpld3
 from tools.spyder import spyder1
 from tools.line import line_chart
 
@@ -45,10 +44,7 @@ if player:
 		players = [player]
 		with col1b:
 			fig = spyder1(players, df, player)
-			#mpld3.plugins.connect(fig, mpld3.plugins.PointLabelTooltip([], labels=players))
 			stm.pyplot(fig)
-			#stm.write(mpld3.fig_to_html(fig))
-			#stm.plotly_chart(fig)
 		with col2b:
 			fig = line_chart(players, df, stat)
 			stm.plotly_chart(fig)
