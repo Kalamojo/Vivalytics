@@ -1,6 +1,6 @@
 import streamlit as stm
 import pandas as pd
-from tools.spyder import spyder
+from tools.spyder import spyder1
   
 stm.title("Stats Comparison")
 stm.sidebar.success("You are currently viewing The Player Comparison page")
@@ -25,7 +25,7 @@ if playerList:
 				if valid_years[0] > valid_years[1]:
 					raise ValueError('Smallest Valid year is larger than Largest Valid year')
 				years = stm.slider('Select Year Range', valid_years[0], valid_years[1], value=[valid_years[0], valid_years[1]])
-				fig = spyder(playerList, df, "Stats Compare", set([year for year in range(years[0], years[1]+1)]))
+				fig = spyder1(playerList, df, "Stats Compare", set([year for year in range(years[0], years[1]+1)]))
 				stm.pyplot(fig)
 			except:
 				stm.error("Players have an incompatable time range")
@@ -34,7 +34,7 @@ if playerList:
 			valid_years = [(min(player_dfs[i]["Year"]), max(player_dfs[i]["Year"])) for i in range(len(playerList))]
 			if len(playerList) < 2:
 				years = stm.slider('Select Year Range', valid_years[0][0], valid_years[0][1], value=[valid_years[0][0], valid_years[0][1]])
-				fig = spyder(playerList, df, "Stats Compare", [set([year for year in range(years[0], years[1]+1)])], restrict=False)
+				fig = spyder1(playerList, df, "Stats Compare", [set([year for year in range(years[0], years[1]+1)])], restrict=False)
 				stm.pyplot(fig)
 			else:
 				col1a, col2a = stm.columns([1, 1], gap="medium")
@@ -42,7 +42,7 @@ if playerList:
 					years1 = stm.slider('Select Year Range for ' + playerList[0], valid_years[0][0], valid_years[0][1], value=[valid_years[0][0], valid_years[0][1]])
 				with col2a:
 					years2 = stm.slider('Select Year Range for ' + playerList[1], valid_years[1][0], valid_years[1][1], value=[valid_years[1][0], valid_years[1][1]])
-				fig = spyder(playerList, df, "Stats Compare", [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], restrict=False)
+				fig = spyder1(playerList, df, "Stats Compare", [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], restrict=False)
 				stm.pyplot(fig)
 			
 	except:
