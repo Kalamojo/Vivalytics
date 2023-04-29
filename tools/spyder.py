@@ -9,7 +9,12 @@ from matplotlib.projections import register_projection
 from matplotlib.spines import Spine
 from matplotlib.transforms import Affine2D
 
-def spyder(players, df, title, valid_years=[], restrict=True):
+import plotly.graph_objs as go
+
+def norm(num, big, smol):
+        return (num-smol)/(big-smol)
+
+def spyder1(players, df, title, valid_years=[], restrict=True):
     def radar_factory(num_vars, frame='circle'):
         """Create a radar chart with `num_vars` axes.
 
@@ -106,9 +111,6 @@ def spyder(players, df, title, valid_years=[], restrict=True):
         register_projection(RadarAxes)
         return theta
 
-    def norm(num, big, smol):
-        return (num-smol)/(big-smol)
-
     plt.style.use('dark_background')
 
     soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
@@ -120,7 +122,6 @@ def spyder(players, df, title, valid_years=[], restrict=True):
             valid_years = set(player_dfs[0]["Year"].to_list())
             for s in player_dfs[1:]:
                 valid_years.intersection_update(s["Year"])
-        print(valid_years)
 
         for i in range(len(players)):
             player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years)]
@@ -129,6 +130,7 @@ def spyder(players, df, title, valid_years=[], restrict=True):
             for i in range(len(players)):
                 player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years[i])]
 
+    print("Valid years:", valid_years)
     data = [soccer, (title, [[norm(sum(p_df[col])/len(p_df[col]), max(df[col]), 0) for col in soccer] for p_df in player_dfs])]
 
     N = len(data[0])
@@ -153,4 +155,48 @@ def spyder(players, df, title, valid_years=[], restrict=True):
     if len(players) > 1:
         ax.legend()
     #plt.show()
+    #plt.ion()
+    
+    return fig
+
+def spyder2(players, df, title, valid_years=[], restrict=True):
+    soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
+    player_dfs = [df[df['Player']==name] for name in players]
+
+    if restrict:
+        if len(valid_years) == 0:
+            valid_years = set(player_dfs[0]["Year"].to_list())
+            for s in player_dfs[1:]:
+                valid_years.intersection_update(s["Year"])
+
+        for i in range(len(players)):
+            player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years)]
+    else:
+        if len(valid_years) != 0:
+            for i in range(len(players)):
+                player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years[i])]
+
+    print("Valid years:", valid_years)
+
+    fig = go.Figure()
+
+    for i, player_df in enumerate(player_dfs):
+        data = [norm(sum(player_df[col])/len(player_df[col]), max(df[col]), 0) for col in soccer]
+        fig.add_trace(go.Scatterpolar(
+            r=data,
+            theta=soccer,
+            fill='toself',
+            name=players[i]
+        ))
+
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                range=[0, 1]
+            )),
+        showlegend=True,
+        title=title
+    )
+
     return fig
