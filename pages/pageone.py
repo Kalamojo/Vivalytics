@@ -48,8 +48,9 @@ if player:
 		with col2b:
 			fig = line_chart(players, df, stat)
 			stm.plotly_chart(fig)
-		player_df_rom = player_df.drop(["Rk", "Player", "Born", "Matches", "Player Link", "Player ID"], 
+		player_df_rom = player_df.drop(["Unnamed: 0", "Rk", "Player", "Born", "Matches", "Player Link", "Player ID"], 
 										  axis=1)
+		print(player_df_rom.columns)
 		player_df_rom.index = player_df_rom.index.map(str)
 		#print(player_df_rom)
 		stm.dataframe(player_df_rom)
