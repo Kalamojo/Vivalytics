@@ -1,6 +1,7 @@
 import streamlit as stm
 import pandas as pd
 from tools.spyder import spyder1
+from tools.line import line_chart
   
 stm.title("Stats Comparison")
 stm.sidebar.success("You are currently viewing The Player Comparison page")
@@ -29,6 +30,9 @@ if playerList:
 				stm.pyplot(fig)
 			except:
 				stm.error("Players have an incompatable time range")
+			stat = stm.selectbox("Select a stat", ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt'])
+			fig = line_chart(playerList, df, stat, 700)
+			stm.plotly_chart(fig)
 		else:
 			player_dfs = [df[df['Player']==name] for name in playerList]
 			valid_years = [(min(player_dfs[i]["Year"]), max(player_dfs[i]["Year"])) for i in range(len(playerList))]
@@ -44,6 +48,9 @@ if playerList:
 					years2 = stm.slider('Select Year Range for ' + playerList[1], valid_years[1][0], valid_years[1][1], value=[valid_years[1][0], valid_years[1][1]])
 				fig = spyder1(playerList, df, "Stats Compare", [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], restrict=False)
 				stm.pyplot(fig)
+			stat = stm.selectbox("Select a stat", ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt'])
+			fig = line_chart(playerList, df, stat, 700)
+			stm.plotly_chart(fig)
 			
 	except:
 		stm.error("Player not found")

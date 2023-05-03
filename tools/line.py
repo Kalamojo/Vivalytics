@@ -3,12 +3,11 @@ import numpy as np
 
 import plotly.graph_objs as go
 
-def line_chart(players, df, stat, valid_years=[], restrict=True):
+def line_chart(players, df, stat, width=350, restrict=True):
     player_dfs = [df[df['Player']==name].sort_values('Year') for name in players]
 
     # Create a scatter plot
     fig = go.Figure(
-        data=go.Scatter(x=player_dfs[0]['Year'], y=player_dfs[0][stat]),
         layout=go.Layout(
             title=stat,
             xaxis=dict(title="Year"),
@@ -16,9 +15,13 @@ def line_chart(players, df, stat, valid_years=[], restrict=True):
         )
     )
 
+    for i in range(len(player_dfs)):
+        fig.add_trace(go.Scatter(x=player_dfs[i]["Year"], y=player_dfs[i][stat], name=player_dfs[i]["Player"].iloc[0]))
+
+
     fig.update_layout(
         autosize=True,
-        width=350)
+        width=width)
 
     """
     # Add a range slider to the plot
