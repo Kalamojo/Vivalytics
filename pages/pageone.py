@@ -1,29 +1,17 @@
 import streamlit as stm
 import pandas as pd
-import bs4
-import requests
 from tools.spyder import spyder1
 from tools.line import line_chart
+from tools.scrape import get_img_link
 
-def get_img_link(url):
-	print("why")
-	r = requests.get(url)
-	print("this")
-
-	html = bs4.BeautifulSoup(r.text, 'html.parser')
-	title = html.find("div", {"id": "meta"})
-	print("slow")
-	if title:
-		image = title.find("img")
-		print(image)
-		if image == None:
-			return "not_found"
-		return image['src']
-	return "not_found"
-  
 stm.title("Individual Stats")
 stm.sidebar.success("You are currently viewing The Stats Searching page")
-df = pd.read_csv("./resources/player_all_stats.csv")
+df = pd.read_csv("./resources/persons_all_stats.csv")
+
+stat_spread = {"FW": ["Gls", "SoT", "PrgC", "Carries", "Touches", "PK"],
+			   "MF": ["Cmp", "Cmp%", "KP", "PrgP", "Carries", "TklW"],
+			   "DF": ["Tkl", "Int", "Clr", "Won", "PrgDist", "Pass"],
+			   "GK": ["Saves", "Save%", "GA", "CS", "AvgLen", "Stp"]}
 
 player = stm.selectbox("Enter the name of a player", 
 						  [''] + sorted(list(set(df["Player"]))),
@@ -39,16 +27,17 @@ if player:
 			stm.title(player)
 			stm.caption(player_df.iloc[0]["player_link"])
 			stm.write("Squad: " + player_df.iloc[-1]['Squad'])
-		stat = stm.selectbox("Select a stat", ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt'])
+		stats_list = stat_spread[player_df.iloc[-1]["Pos"].split(",")[0]]
+		stat = stm.selectbox("Select a stat", stats_list)
 		col1b, col2b = stm.columns([1, 1])
 		players = [player]
 		with col1b:
-			fig = spyder1(players, df, player)
+			fig = spyder1(players, df, player, [stats_list])
 			stm.pyplot(fig)
 		with col2b:
 			fig = line_chart(players, df, stat)
 			stm.plotly_chart(fig)
-		player_df_rom = player_df.drop(["Rk", "Player", "Born", "Match", "player_link", "player_id"], 
+		player_df_rom = player_df.drop(["Unnamed: 0.1", "Rk", "Player", "Born", "Match", "player_link"], 
 										  axis=1)
 		player_df_rom.dropna(axis=1, how='all', inplace=True)
 		player_df_rom.index = player_df_rom.index.map(str)
@@ -59,7 +48,10 @@ if player:
 		stm.dataframe(player_df_rom)
 		image_link = get_img_link(player_df.iloc[0]["player_link"])
 		with col1a:
-			stm.image(image_link)
+			try:
+				stm.image(image_link)
+			except:
+				stm.image("./resources/no-profile-picture-icon.webp")
 			
 	except:
 		stm.error("Player not found")

@@ -112,10 +112,20 @@ def spyder1(players, df, title, stats_list=[], valid_years=[], restrict=True):
         return theta
 
     plt.style.use('dark_background')
+    df = df.fillna(0)
 
-    soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt'] if len(stats_list) == 0 else list(set(sum(stats_list, [])))
+    if len(stats_list) == 0:
+        stats_list = [['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']]
+
+    soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
+    #print(soccer)
 
     player_dfs = [df[df['Player']==name] for name in players]
+    for i in range(len(player_dfs)):
+        if sum((player_dfs[i][stats_list[i]] == 0).all()) >= 3:
+            stats_list[i] = soccer
+    
+    soccer = list(set(sum(stats_list, [])))
 
     if restrict:
         if len(valid_years) == 0:
@@ -130,9 +140,9 @@ def spyder1(players, df, title, stats_list=[], valid_years=[], restrict=True):
             for i in range(len(players)):
                 player_dfs[i] = player_dfs[i][player_dfs[i]["Year"].isin(valid_years[i])]
 
-    df = df.fillna(0)
     print("Valid years:", valid_years)
-    data = [soccer, (title, [[norm(sum(p_df[col])/len(p_df[col]), max(df[col]), 0) for col in soccer] for p_df in player_dfs])]
+    data = [soccer, (title, [[norm(sum(p_df[col][p_df[col] != 0])/max(len(p_df[col][p_df[col] != 0]), 1), max(df[col]), 0) for col in soccer] for p_df in player_dfs])]
+    #print(data)
 
     N = len(data[0])
     theta = radar_factory(N, frame='polygon')
