@@ -6,7 +6,7 @@ from tools.line import line_chart
 stm.title("Stats Comparison")
 stm.sidebar.success("You are currently viewing The Player Comparison page")
 
-df = pd.read_csv("./resources/standard_stats_6.csv")
+df = pd.read_csv("./resources/player_all_stats.csv")
 
 playerList = stm.multiselect("Enter Player Names", sorted(list(set(df["Player"]))))
 #player2 = stm.text_input("Enter the second player name")
@@ -30,7 +30,8 @@ if playerList:
 				stm.pyplot(fig)
 			except:
 				stm.error("Players have an incompatable time range")
-			stat = stm.selectbox("Select a stat", ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt'])
+			stats = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
+			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(playerList, df, stat, 700)
 			stm.plotly_chart(fig)
 		else:
@@ -48,7 +49,8 @@ if playerList:
 					years2 = stm.slider('Select Year Range for ' + playerList[1], valid_years[1][0], valid_years[1][1], value=[valid_years[1][0], valid_years[1][1]])
 				fig = spyder1(playerList, df, "Stats Compare", [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], restrict=False)
 				stm.pyplot(fig)
-			stat = stm.selectbox("Select a stat", ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt'])
+			stats = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
+			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(playerList, df, stat, 700)
 			stm.plotly_chart(fig)
 			

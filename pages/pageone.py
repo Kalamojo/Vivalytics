@@ -23,7 +23,7 @@ def get_img_link(url):
   
 stm.title("Individual Stats")
 stm.sidebar.success("You are currently viewing The Stats Searching page")
-df = pd.read_csv("./resources/standard_stats_6.csv")
+df = pd.read_csv("./resources/player_all_stats.csv")
 
 player = stm.selectbox("Enter the name of a player", 
 						  [''] + sorted(list(set(df["Player"]))),
@@ -37,7 +37,7 @@ if player:
 		col1a, col2a = stm.columns([1, 2])
 		with col2a:
 			stm.title(player)
-			stm.caption(player_df.iloc[0]["Player Link"])
+			stm.caption(player_df.iloc[0]["player_link"])
 			stm.write("Squad: " + player_df.iloc[-1]['Squad'])
 		stat = stm.selectbox("Select a stat", ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt'])
 		col1b, col2b = stm.columns([1, 1])
@@ -48,13 +48,16 @@ if player:
 		with col2b:
 			fig = line_chart(players, df, stat)
 			stm.plotly_chart(fig)
-		player_df_rom = player_df.drop(["Unnamed: 0", "Rk", "Player", "Born", "Matches", "Player Link", "Player ID"], 
+		player_df_rom = player_df.drop(["Rk", "Player", "Born", "Match", "player_link", "player_id"], 
 										  axis=1)
-		print(player_df_rom.columns)
+		player_df_rom.dropna(axis=1, how='all', inplace=True)
 		player_df_rom.index = player_df_rom.index.map(str)
+		to_front = ["League", "Nation", "Squad", "Pos", "Age"]
+		for col in reversed(to_front):
+			player_df_rom.insert(0, col, player_df_rom.pop(col))
 		#print(player_df_rom)
 		stm.dataframe(player_df_rom)
-		image_link = get_img_link(player_df.iloc[0]["Player Link"])
+		image_link = get_img_link(player_df.iloc[0]["player_link"])
 		with col1a:
 			stm.image(image_link)
 			
