@@ -4,7 +4,7 @@ from tools.spyder import spyder1
 from tools.line import line_chart
 
 stm.title("Team Stats")
-stm.sidebar.success("You are currently viewing The Stats Searching page")
+stm.sidebar.success("You are currently viewing The Squad Stats page")
 df = pd.read_csv("./resources/team_all_stats.csv")
 
 team = stm.selectbox("Enter the name of a Squad", 

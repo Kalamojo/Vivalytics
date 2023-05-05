@@ -3,7 +3,7 @@ import pandas as pd
 from tools.spyder import spyder1
 from tools.line import line_chart
   
-stm.title("Stats Comparison")
+stm.title("Player Stats Comparison")
 stm.sidebar.success("You are currently viewing The Player Comparison page")
 df = pd.read_csv("./resources/persons_all_stats.csv")
 

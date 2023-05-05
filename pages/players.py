@@ -4,8 +4,8 @@ from tools.spyder import spyder1
 from tools.line import line_chart
 from tools.scrape import get_img_link
 
-stm.title("Individual Stats")
-stm.sidebar.success("You are currently viewing The Stats Searching page")
+stm.title("Player Stats")
+stm.sidebar.success("You are currently viewing The Player Stats page")
 df = pd.read_csv("./resources/persons_all_stats.csv")
 
 stat_spread = {"FW": ["Gls", "SoT", "PrgC", "Carries", "Touches", "PK"],
