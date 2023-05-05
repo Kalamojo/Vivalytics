@@ -3,8 +3,8 @@ import numpy as np
 
 import plotly.graph_objs as go
 
-def line_chart(players, df, stat, width=350, restrict=True):
-    player_dfs = [df[df['Player']==name].sort_values('Year') for name in players]
+def line_chart(players, df, stat, width=350, group="Player", restrict=True):
+    player_dfs = [df[df[group]==name].sort_values('Year') for name in players]
 
     # Create a scatter plot
     fig = go.Figure(
@@ -16,7 +16,7 @@ def line_chart(players, df, stat, width=350, restrict=True):
     )
 
     for i in range(len(player_dfs)):
-        fig.add_trace(go.Scatter(x=player_dfs[i]["Year"], y=player_dfs[i][stat], name=player_dfs[i]["Player"].iloc[0]))
+        fig.add_trace(go.Scatter(x=player_dfs[i]["Year"], y=player_dfs[i][stat], name=player_dfs[i][group].iloc[0]))
 
 
     fig.update_layout(

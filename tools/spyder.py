@@ -14,7 +14,7 @@ import plotly.graph_objs as go
 def norm(num, big, smol):
         return (num-smol)/(big-smol)
 
-def spyder1(players, df, title, stats_list=[], valid_years=[], restrict=True):
+def spyder1(players, df, title, stats_list=[], valid_years=[], group="Player", restrict=True):
     def radar_factory(num_vars, frame='circle'):
         """Create a radar chart with `num_vars` axes.
 
@@ -114,18 +114,19 @@ def spyder1(players, df, title, stats_list=[], valid_years=[], restrict=True):
     plt.style.use('dark_background')
     df = df.fillna(0)
 
-    if len(stats_list) == 0:
+    if len(stats_list) == 0 and group == "Player":
         stats_list = [['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']]
 
     soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
     #print(soccer)
 
-    player_dfs = [df[df['Player']==name] for name in players]
+    player_dfs = [df[df[group]==name] for name in players]
     for i in range(len(player_dfs)):
-        if sum((player_dfs[i][stats_list[i]] == 0).all()) >= 3:
+        if group == "Player" and sum((player_dfs[i][stats_list[i]] == 0).all()) >= 3:
             stats_list[i] = soccer
     
     soccer = list(set(sum(stats_list, [])))
+    #print(soccer)
 
     if restrict:
         if len(valid_years) == 0:
