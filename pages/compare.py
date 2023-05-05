@@ -17,7 +17,7 @@ playerList = stm.multiselect("Enter Player Names", sorted(list(set(df["Player"])
 if playerList:
 	try:
 		if len(playerList) > 2:
-			player_dfs = [df[df['Player']==name] for name in playerList]
+			player_dfs = [df[df['Player']==name].sort_values('Year') for name in playerList]
 			stats_lists = [stat_spread[p_df.iloc[-1]["Pos"].split(",")[0]] for p_df in player_dfs]
 			valid_years = [min(player_dfs[0]["Year"]), max(player_dfs[0]["Year"])]
 			for s in player_dfs[1:]:
@@ -40,7 +40,7 @@ if playerList:
 			fig = line_chart(playerList, df, stat, 700)
 			stm.plotly_chart(fig)
 		else:
-			player_dfs = [df[df['Player']==name] for name in playerList]
+			player_dfs = [df[df['Player']==name].sort_values('Year') for name in playerList]
 			stats_lists = [stat_spread[p_df.iloc[-1]["Pos"].split(",")[0]] for p_df in player_dfs]
 			valid_years = [(min(player_dfs[i]["Year"]), max(player_dfs[i]["Year"])) for i in range(len(playerList))]
 			if len(playerList) < 2:
