@@ -35,7 +35,7 @@ if playerList:
 				stm.pyplot(fig)
 			except:
 				stm.error("Players have an incompatable time range")
-			stats = sum(stats_lists, [])
+			stats = list(set(sum(stats_lists, [])))
 			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(playerList, df, stat, 700)
 			stm.plotly_chart(fig)
@@ -55,7 +55,7 @@ if playerList:
 					years2 = stm.slider('Select Year Range for ' + playerList[1], valid_years[1][0], valid_years[1][1], value=[valid_years[1][0], valid_years[1][1]])
 				fig = spyder1(playerList, df, "Stats Compare", stats_lists, [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], restrict=False)
 				stm.pyplot(fig)
-			stats = sum(stats_lists, [])
+			stats = list(set(sum(stats_lists, [])))
 			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(playerList, df, stat, 700)
 			stm.plotly_chart(fig)
