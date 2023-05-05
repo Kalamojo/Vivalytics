@@ -30,7 +30,7 @@ if team:
 		with col2b:
 			fig = line_chart(teams, df, stat, group="Squad")
 			stm.plotly_chart(fig)
-		team_df_rom = team_df.drop(["Unnamed: 0", "Squad", "team_id", "League"], 
+		team_df_rom = team_df.drop(["Unnamed: 0", "Unnamed: 109", "Squad", "team_id", "League"], 
 										  axis=1)
 		team_df_rom.dropna(axis=1, how='all', inplace=True)
 		team_df_rom.index = team_df_rom.index.map(str)
