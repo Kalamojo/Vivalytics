@@ -30,7 +30,11 @@ if playerList:
 			try:
 				if valid_years[0] > valid_years[1]:
 					raise ValueError('Smallest Valid year is larger than Largest Valid year')
-				years = stm.slider('Select Year Range', valid_years[0], valid_years[1], value=[valid_years[0], valid_years[1]])
+				if valid_years[0] == valid_years[1]:
+					stm.caption(f"Only {valid_years[0]} is available for a player")
+					years = [valid_years[0], valid_years[0]]
+				else:
+					years = stm.slider('Select Year Range', valid_years[0], valid_years[1], value=[valid_years[0], valid_years[1]])
 				fig = spyder1(playerList, df, "Stats Compare", stats_lists, set([year for year in range(years[0], years[1]+1)]))
 				stm.pyplot(fig)
 			except:
@@ -44,15 +48,29 @@ if playerList:
 			stats_lists = [stat_spread[p_df.iloc[-1]["Pos"].split(",")[0]] for p_df in player_dfs]
 			valid_years = [(min(player_dfs[i]["Year"]), max(player_dfs[i]["Year"])) for i in range(len(playerList))]
 			if len(playerList) < 2:
-				years = stm.slider('Select Year Range', valid_years[0][0], valid_years[0][1], value=[valid_years[0][0], valid_years[0][1]])
+				print("Bro")
+				if valid_years[0][0] == valid_years[0][1]:
+					stm.caption("Cannot Change Year Range for Player")
+					years = [valid_years[0][0], valid_years[0][0]]
+				else:
+					years = stm.slider('Select Year Range', valid_years[0][0], valid_years[0][1], value=[valid_years[0][0], valid_years[0][1]])
 				fig = spyder1(playerList, df, "Stats Compare", stats_lists, [set([year for year in range(years[0], years[1]+1)])], restrict=False)
 				stm.pyplot(fig)
 			else:
 				col1a, col2a = stm.columns([1, 1], gap="medium")
 				with col1a:
-					years1 = stm.slider('Select Year Range for ' + playerList[0], valid_years[0][0], valid_years[0][1], value=[valid_years[0][0], valid_years[0][1]])
+					if valid_years[0][0] == valid_years[0][1]:
+						stm.caption("Cannot Change Year Range for Player")
+						years1 = [valid_years[0][0], valid_years[0][0]]
+					else:
+						years1 = stm.slider('Select Year Range for ' + playerList[0], valid_years[0][0], valid_years[0][1], value=[valid_years[0][0], valid_years[0][1]])
+
 				with col2a:
-					years2 = stm.slider('Select Year Range for ' + playerList[1], valid_years[1][0], valid_years[1][1], value=[valid_years[1][0], valid_years[1][1]])
+					if valid_years[1][0] == valid_years[1][1]:
+						stm.caption("Cannot Change Year Range for Player")
+						years2 = [valid_years[0][0], valid_years[0][0]]
+					else:
+						years2 = stm.slider('Select Year Range for ' + playerList[1], valid_years[1][0], valid_years[1][1], value=[valid_years[1][0], valid_years[1][1]])
 				fig = spyder1(playerList, df, "Stats Compare", stats_lists, [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], restrict=False)
 				stm.pyplot(fig)
 			stats = list(set(sum(stats_lists, [])))
