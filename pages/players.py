@@ -1,6 +1,6 @@
 import streamlit as stm
 import pandas as pd
-from tools.spyder import spyder1
+from tools.spyder import spyder1, spyder2
 from tools.line import line_chart
 from tools.scrape import get_img_link
 
@@ -11,7 +11,7 @@ df = pd.read_csv("./resources/persons_all_stats.csv")
 stat_spread = {"FW": ["Gls", "SoT", "PrgC", "Carries", "Touches", "PK"],
 			   "MF": ["Cmp", "Cmp%", "KP", "PrgP", "Carries", "TklW"],
 			   "DF": ["Tkl", "Int", "Clr", "Won", "PrgDist", "Pass"],
-			   "GK": ["Saves", "Save%", "GA", "CS", "AvgLen", "Stp"]}
+			   "GK": ["Saves", "Save%", "PrgDist", "CS", "AvgLen", "Stp"]}
 
 player = stm.selectbox("Enter the name of a player", 
 						  [''] + sorted(list(set(df["Player"]))),
@@ -32,8 +32,9 @@ if player:
 		col1b, col2b = stm.columns([1, 1])
 		players = [player]
 		with col1b:
-			fig = spyder1(players, df, player, [stats_list])
-			stm.pyplot(fig)
+			fig = spyder2(players, df, player, [stats_list])
+			#stm.pyplot(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 		with col2b:
 			fig = line_chart(players, df, stat)
 			stm.plotly_chart(fig)

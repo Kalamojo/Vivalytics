@@ -1,6 +1,6 @@
 import streamlit as stm
 import pandas as pd
-from tools.spyder import spyder1
+from tools.spyder import spyder2
 from tools.line import line_chart
 
 stm.title("Team Stats")
@@ -25,8 +25,10 @@ if team:
 		col1b, col2b = stm.columns([1, 1])
 		teams = [team]
 		with col1b:
-			fig = spyder1(teams, df, team, [stats_list], group="Squad")
-			stm.pyplot(fig)
+			#fig = spyder1(teams, df, team, [stats_list], group="Squad")
+			fig = spyder2(teams, df, team, [stats_list], group="Squad")
+			#stm.pyplot(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 		with col2b:
 			fig = line_chart(teams, df, stat, group="Squad")
 			stm.plotly_chart(fig)

@@ -1,6 +1,6 @@
 import streamlit as stm
 import pandas as pd
-from tools.spyder import spyder1
+from tools.spyder import spyder2
 from tools.line import line_chart
   
 stm.title("Team Stats Comparison")
@@ -30,8 +30,8 @@ if squadList:
 					years = [valid_years[0], valid_years[0]]
 				else:
 					years = stm.slider('Select Year Range', valid_years[0], valid_years[1], value=[valid_years[0], valid_years[1]])
-				fig = spyder1(squadList, df, "Stats Compare", stats_lists, set([year for year in range(years[0], years[1]+1)]), group="Squad")
-				stm.pyplot(fig)
+				fig = spyder2(squadList, df, "Stats Compare", stats_lists, set([year for year in range(years[0], years[1]+1)]), group="Squad")
+				stm.plotly_chart(fig, use_container_width=True)
 			except:
 				stm.error("Squads have an incompatable time range")
 			stats = ["Gls", "Att", "Sh/90", "SoT/90", "Poss", "Cmp%", "Tkl+Int"]
@@ -49,8 +49,8 @@ if squadList:
 					years = [valid_years[0][0], valid_years[0][0]]
 				else:
 					years = stm.slider('Select Year Range', valid_years[0][0], valid_years[0][1], value=[valid_years[0][0], valid_years[0][1]])
-				fig = spyder1(squadList, df, "Stats Compare", stats_lists, [set([year for year in range(years[0], years[1]+1)])], restrict=False, group="Squad")
-				stm.pyplot(fig)
+				fig = spyder2(squadList, df, "Stats Compare", stats_lists, [set([year for year in range(years[0], years[1]+1)])], restrict=False, group="Squad")
+				stm.plotly_chart(fig, use_container_width=True)
 			else:
 				col1a, col2a = stm.columns([1, 1], gap="medium")
 				with col1a:
@@ -66,8 +66,8 @@ if squadList:
 						years2 = [valid_years[0][0], valid_years[0][0]]
 					else:
 						years2 = stm.slider('Select Year Range for ' + squadList[1], valid_years[1][0], valid_years[1][1], value=[valid_years[1][0], valid_years[1][1]])
-				fig = spyder1(squadList, df, "Stats Compare", stats_lists, [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], group="Squad", restrict=False)
-				stm.pyplot(fig)
+				fig = spyder2(squadList, df, "Stats Compare", stats_lists, [set([year for year in range(years1[0], years1[1]+1)]), set([year for year in range(years2[0], years2[1]+1)])], group="Squad", restrict=False)
+				stm.plotly_chart(fig, use_container_width=True)
 			stats = ["Gls", "Att", "Sh/90", "SoT/90", "Poss", "Cmp%", "Tkl+Int"]
 			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(squadList, df, stat, 700, group="Squad")
