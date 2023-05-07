@@ -1,6 +1,6 @@
 import streamlit as stm
 import pandas as pd
-from tools.spyder import spyder1, spyder2
+from tools.spyder import spyder2
 from tools.line import line_chart
 from tools.scrape import get_img_link
 
