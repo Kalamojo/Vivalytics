@@ -244,6 +244,9 @@ def spyder2(players, df, title, stats_list=[], valid_years=[], group="Player", m
             data_df.loc[ind] = [col, p_df.iloc[0][group], norm(sum(p_df[col][p_df[col] != 0])/max(len(p_df[col][p_df[col] != 0]), 1), max(df[col]), 0), stat_desc[col], round(sum(p_df[col][p_df[col] != 0])/max(len(p_df[col][p_df[col] != 0]), 1), 2)]
             ind += 1
 
+    #print(data_df.isnull().sum())
+    #data_df.append(data_df)
+
     fig = px.line_polar(data_df, r="points",
                         theta="category",
                         color=group.lower(),

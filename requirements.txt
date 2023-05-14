@@ -1,4 +1,4 @@
 BeautifulSoup4
 matplotlib
-pandas==1.5.3
+pandas==1.4
 plotly
