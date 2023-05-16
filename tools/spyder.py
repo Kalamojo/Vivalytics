@@ -39,7 +39,11 @@ stat_desc = {"Gls": "Goals",
              "Clr": "Clearances",
              "Won": "Arials Won",
              "PrgDist": "Progessive Passing Distance",
-             "Pass": "Passes Blocked"
+             "Pass": "Passes Blocked",
+             "PKatt": "Penalty Kicks attempted",
+             "Ast": "Assists",
+             "G+A": "Goals + Assists",
+             "G-PK": "Non-penalty Goals"
 }
 
 def radar_factory(num_vars, frame='circle'):
@@ -205,14 +209,17 @@ def spyder1(players, df, title, stats_list=[], valid_years=[], group="Player", r
 def spyder2(players, df, title, stats_list=[], valid_years=[], group="Player", margin=True, restrict=True):
     plt.style.use('dark_background')
     df = df.fillna(0)
+    print(stats_list)
 
     if len(stats_list) == 0 and group == "Player":
-        stats_list = [['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']]
+        stats_list = [['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']] * len(players)
 
     soccer = ['Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt']
     #print(soccer)
 
     player_dfs = [df[df[group]==name] for name in players]
+    #print(player_dfs[0][stats_list[0]])
+    #print(player_dfs[0]["PKatt"])
     for i in range(len(player_dfs)):
         if group == "Player" and sum((player_dfs[i][stats_list[i]] == 0).all()) >= 3:
             stats_list[i] = soccer
