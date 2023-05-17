@@ -257,14 +257,16 @@ def spyder2(players, df, title, stats_list=[], valid_years=[], group="Player", m
     fig = px.line_polar(data_df, r="points",
                         theta="category",
                         color=group.lower(),
+                        color_discrete_sequence=px.colors.sequential.RdBu,
                         line_close=True,
-                        custom_data=["describe", "average"],
+                        custom_data=[group.lower(), "describe", "average"],
                         template="plotly_dark")
 
     fig.update_traces(
         hovertemplate="<br>".join([
-            "Stat: %{customdata[0]}",
-            "Average: %{customdata[1]}"
+            "%{customdata[0]}",
+            "Stat: %{customdata[1]}",
+            "Average: %{customdata[2]}<extra></extra>"
         ])
     )
 
