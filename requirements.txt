@@ -5,3 +5,4 @@ plotly
 scikit-learn
 nltk
 spacy
+en_core_web_sm
