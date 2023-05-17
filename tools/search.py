@@ -95,6 +95,6 @@ def query(q, emb):
     #closest_index = np.argmax(similarities)
     #closest_text = pages[closest_index]
     closest_indices = similarities.argsort()[-3:][::-1]
-    closest_texts = [pages[ind] for ind in closest_indices]
+    closest_texts = [[similarities[ind], pages[ind]] for ind in closest_indices]
     return persons, dates, orgs, closest_texts
     
