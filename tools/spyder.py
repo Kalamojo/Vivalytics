@@ -42,7 +42,8 @@ stat_desc = {"Gls": "Goals",
              "PKatt": "Penalty Kicks attempted",
              "Ast": "Assists",
              "G+A": "Goals + Assists",
-             "G-PK": "Non-penalty Goals"
+             "G-PK": "Non-penalty Goals",
+             "Poss": "% of Passes attempted"
 }
 
 def radar_factory(num_vars, frame='circle'):
