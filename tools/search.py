@@ -9,9 +9,10 @@ from nltk.stem.wordnet import WordNetLemmatizer
 import string
 import re
 import spacy
+import en_core_web_sm
 
 # Load the spaCy English model
-nlp = spacy.load("en_core_web_sm")
+nlp = en_core_web_sm.load()
 
 lem = WordNetLemmatizer()
 punctuations = string.punctuation
