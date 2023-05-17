@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import nltk
-#nltk.download('stopwords')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
-#nltk.download('wordnet')
+nltk.download('wordnet')
 from nltk.stem.wordnet import WordNetLemmatizer
 import string
 import re
