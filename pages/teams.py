@@ -31,7 +31,7 @@ if team:
 			stm.plotly_chart(fig, use_container_width=True)
 		with col2b:
 			fig = line_chart(teams, df, stat, group="Squad")
-			stm.plotly_chart(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 		team_df_rom = team_df.drop(["Unnamed: 0", "Unnamed: 109", "Squad", "team_id", "League"], 
 										  axis=1)
 		team_df_rom.dropna(axis=1, how='all', inplace=True)

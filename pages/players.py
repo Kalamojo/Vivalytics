@@ -38,7 +38,7 @@ if player:
 			stm.plotly_chart(fig, use_container_width=True)
 		with col2b:
 			fig = line_chart(players, df, stat)
-			stm.plotly_chart(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 		player_df_rom = player_df.drop(["Unnamed: 0.1", "Rk", "Player", "Born", "Match", "player_link"], 
 										  axis=1)
 		player_df_rom.dropna(axis=1, how='all', inplace=True)

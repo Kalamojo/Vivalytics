@@ -37,7 +37,7 @@ if squadList:
 			stats = ["Gls", "Att", "Sh/90", "SoT/90", "Poss", "Cmp%", "Tkl+Int"]
 			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(squadList, df, stat, 700, group="Squad")
-			stm.plotly_chart(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 		else:
 			squad_dfs = [df[df['Squad']==name].sort_values('Year') for name in squadList]
 			stats_lists = [["Gls", "Att", "Sh/90", "SoT/90", "Poss", "Cmp%", "Tkl+Int"]]
@@ -71,7 +71,7 @@ if squadList:
 			stats = ["Gls", "Att", "Sh/90", "SoT/90", "Poss", "Cmp%", "Tkl+Int"]
 			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(squadList, df, stat, 700, group="Squad")
-			stm.plotly_chart(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 			
 	except:
 		stm.error("Squad not found")

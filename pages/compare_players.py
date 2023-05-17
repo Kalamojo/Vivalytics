@@ -42,7 +42,7 @@ if playerList:
 			stats = list(set(sum(stats_lists, [])))
 			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(playerList, df, stat, 700)
-			stm.plotly_chart(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 		else:
 			player_dfs = [df[df['Player']==name].sort_values('Year') for name in playerList]
 			stats_lists = [stat_spread[p_df.iloc[-1]["Pos"].split(",")[0]] for p_df in player_dfs]
@@ -76,7 +76,7 @@ if playerList:
 			stats = list(set(sum(stats_lists, [])))
 			stat = stm.selectbox("Select a stat", stats)
 			fig = line_chart(playerList, df, stat, 700)
-			stm.plotly_chart(fig)
+			stm.plotly_chart(fig, use_container_width=True)
 			
 	except:
 		stm.error("Player not found")
