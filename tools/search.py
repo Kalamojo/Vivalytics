@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import euclidean_distances as dist
 import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords
@@ -100,13 +100,13 @@ def query(q, emb):
     query_embedding = query_embedding.reshape(1, -1)
     #print(query_embedding)
 
-    similarities = cosine_similarity(query_embedding, emb).flatten()
+    similarities = dist(query_embedding, emb).flatten()
 
     # Find the index of the text with the highest similarity
     #closest_index = np.argmax(similarities)
     #closest_text = pages[closest_index]
-    closest_indices = similarities.argsort()[-3:][::-1]
-    #closest_indices = similarities.argsort()[:3]
+    #closest_indices = similarities.argsort()[-3:][::-1]
+    closest_indices = similarities.argsort()[:3]
     closest_texts = [[similarities[ind], pages[ind]] for ind in closest_indices]
     return persons, dates, orgs, closest_texts
     
