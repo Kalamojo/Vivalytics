@@ -2,7 +2,7 @@ import streamlit as stm
 import numpy as np
 from tools.search import query
 
-text_embeddings = np.loadtxt('./resources/embeds.txt')
+text_embeddings = np.loadtxt('./resources/embeds3.txt')
 
 query_text = stm.text_input("Search sum")
 
