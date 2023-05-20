@@ -17,6 +17,7 @@ player = stm.selectbox("Enter the name of a player",
 						  [''] + sorted(list(set(df["Player"]))),
 						  0)
 if player:
+	print("")
 	#try:
 	player_df = df[df["Player"] == player]
 	player_df.index = player_df.pop("Year")
