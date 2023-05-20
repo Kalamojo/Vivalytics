@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics.pairwise import euclidean_distances as dist
+from sklearn.metrics.pairwise import cosine_similarity as dist
 import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords
@@ -20,6 +20,8 @@ co = cohere.Client('0Qp52FnTMwc3dhwWafuGWw8yOqdyy1bKK0usvqxD') # This is your tr
 lem = WordNetLemmatizer()
 punctuations = string.punctuation
 stop_words = stopwords.words('english')
+new_stop = ["stat", "stats", "statistic", "statistics"]
+stop_words.extend(new_stop)
 
 def preprocess_text(news, filters=[], stop=True):
     """
@@ -37,39 +39,40 @@ def preprocess_text(news, filters=[], stop=True):
     if stop:
         words = [w for w in words if w not in stop_words]
     words = [''.join(x for x in w if x.isalpha()) for w in words]
-    words = [lem.lemmatize(word, "v") for word in words]
+    words = [lem.lemmatize(word) for word in words]
     words = [w for w in words if w not in punctuations]
     if stop:
         print(words)
     return " ".join(words)
 
-stat_desc = {"Gls": "Goals scored. When shot is converted. Factor of one's shooting & attacking stats",
-            "SoT": "Shots on Target. Number of shots that target goal. Not outside the goals range. Under one's shooting & attacking stats.",
-            "PrgC": "Progressive Balls Carries. Player moves ball across field to opposition. Playmaking and attacking stat. Creates scoring opportunties. Dribbling stat.",
-            "Carries": "Ball Carries. Advancement of ball. Dribbling stat. Covers distance. Promotes attack.",
-            "Touches": "Ball touches. Interactions with ball across field. Maintains possession.",
-            "PK": "Penalty Kicks. Shooting stat.",
-            "Cmp": "Passes Completed. Midfielder stat. Passing Stat. Possession Stat. Progresses play. Maintains control.",
-            "Cmp%": "Pass Completion percentage. Midfielder stat. Passing stat. Accuracy stat. Possession stat. Progresses play. Puts pressure. Build-up Play",
-            "KP": "Key passes. Build-up play. Pressure increased. Progresses play. Chances created. Playmaking stat. Passing stat. Creating stat. Attacking influence. ",
-            "PrgP": "Progressive completed passes. Build-up play. Pressure increased. Progresses play. Playmaking stat. Passing stat. Creating stat.",
-            "TklW": "Tackles won. Defensive stat. Stopping play. Limits other team. Defensive contribution. Defender stat. Disruption. Regain possession.",
-            "Saves": "Goalie saves. Goalie stat.",
-            "Save%": "Goalie save percentage. Goalie stat. ",
-            "GA": "Goalie misses. Goalie stat. Negative stat.",
-            "CS": "No goals allowed. Defensive stat.",
-            "AvgLen": "Average pass length. Midfielder stat. Progressive. Passing stat.",
-            "Stp": "Goalie stops crosses. Goalie stat. Prevent goal scoring opportunties and chances.",
-            "Att": "Passes Attempted. Passing stat. Playmaking stat.",
-            "Sh/90": "Shots per game. Attacking stat. Shooting stat. Pressure stat. Offensive efforts. Chance creation.",
-            "Tkl+Int": "Tackles and ball interceptions. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning",
-            "Tkl": "Tackles. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning",
-            "Int": "Intercepts ball. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning",
-            "Clr": "Cleared ball away. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning",
-            "Won": "Aerial duels. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning. ",
-            "PrgDist": "Moved ball toward. Attacking stat. Progresses ball. Playmaking stat. Puts pressure. Dribbling stat",
-            "Pass": "Blocked pass. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning",
-            "Ast": "Assists. Pass into goal. Playmaking play. Scoring opportunity. Chance creation. Goal created. Midfielder and attacker stat. Key pass."
+stat_desc = {
+    "Gls": "Goals scored. Shot conversion. Shooting & Attacking stats. Attacker, Midfielder.",
+    "SoT": "Shots on Target. Target goal. Shooting & Attacking stats. Attacker, Midfielder.",
+    "PrgC": "Progressive Balls Carries. Player moves ball across field to opposition. Playmaking and attacking stat. Creates scoring opportunties. Dribbling stat.",
+    "Carries": "Ball Carries. Dribbling stat. Distance Covered. Attack.",
+    "Touches": "Ball touches. Maintains possession. Attacker, Midfielder.",
+    "PK": "Penalty Kicks. Shooting stat.",
+    "Cmp": "Passes Completed. Midfielder stat. Passing Stat. Possession Stat. Progresses play. Possession Control.",
+    "Cmp%": "Pass Completion percentage. Midfielder stat. Passing stat. Accuracy stat. Possession stat. Progresses play. Puts pressure. Build-up Play.",
+    "KP": "Key passes. Build-up play. Progresses play. Chances created. Playmaking stat. Passing stat. Creating stat. Pressure play. Midfielder, Winger. ",
+    "PrgP": "Progressive completed passes. Build-up play. Pressure increased. Progresses play. Playmaking stat. Passing stat. Creating stat. Midfielder, Winger.",
+    "TklW": "Tackles won. Defensive stat. Defender. Disruption. Regain possession.",
+    "Saves": "Goalie saves. Goalie stat.",
+    "Save%": "Goalie save percentage. Goalie stat. Goalie/Goalkeeper ",
+    "GA": "Goalie misses. Goalie stat. Goalie/Goalkeeper",
+    "CS": "No goals allowed. Defensive stat.",
+    "AvgLen": "Average pass length. Midfielder stat. Progression. Passing stat.",
+    "Stp": "Goalie stops crosses. Goalie stat. Prevent goal scoring opportunties and chances.",
+    "Att": "Passes Attempted. Passing stat. Playmaking stat. Midfielder, Attacker, Winger, Defender.",
+    "Sh/90": "Shots per game. Attacker/Attacking. Shooting stat. Pressure stat. Offensive efforts. Chance creation.",
+    "Tkl+Int": "Tackles and ball interceptions. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning. Defender/Central Defensive Midfielder", 
+    "Tkl": "Tackles. Defense/Defender stat. Chance prevention. Defensive contribution. Positioning. Defender/Central Defensive Midfielder",
+    "Int": "Intercepts ball. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning",
+    "Clr": "Cleared ball away. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning. Defender/Central Defensive Midfielder",
+    "Won": "Aerial duels. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning. ",
+    "PrgDist": "Moved ball toward. Attacking stat. Progresses ball. Playmaking stat. Puts pressure. Dribbling stat. Midfielder.",
+    "Pass": "Blocked pass. Defense/Defender stat. Chance prevention stat. Defensive contribution. Positioning. Defender/Central Defensive Midfielder",
+    "Ast": "Assists. Pass into goal. Playmaking play. Scoring opportunity. Chance creation. Goal created. Midfielder, Attacker, Winger. Key pass."
 }
 
 pages = [v for v in stat_desc.values()]
@@ -105,8 +108,8 @@ def query(q, emb):
     # Find the index of the text with the highest similarity
     #closest_index = np.argmax(similarities)
     #closest_text = pages[closest_index]
-    #closest_indices = similarities.argsort()[-3:][::-1]
-    closest_indices = similarities.argsort()[:3]
+    closest_indices = similarities.argsort()[-3:][::-1]
+    #closest_indices = similarities.argsort()[:3]
     closest_texts = [[similarities[ind], pages[ind]] for ind in closest_indices]
     return persons, dates, orgs, closest_texts
     
