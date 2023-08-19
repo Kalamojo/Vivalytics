@@ -5,44 +5,57 @@ from tools.match_name import find_entity
 from tools.stat_search import find_stat, search_stat
 
 def league_filt(df, pos, leagues):
-	if pos[1][1] != 'null':
-		league = pos[1][1]
-		closest_leagues = find_entity(league, leagues)
-		if len(closest_leagues) == 1:
-			league = closest_leagues[0][0]
+	try:
+		if pos[1][1] != 'null':
+			league = pos[1][1]
+			closest_leagues = find_entity(league, leagues)
+			if len(closest_leagues) == 1:
+				league = closest_leagues[0][0]
+			else:
+				print("Multiple Leagues with similar names")
+				return df, False
+			print(closest_leagues)
+			return df[df["League"] == league], True
 		else:
-			print("Multiple Leagues with similar names")
+			print("Query did not extract League")
 			return df, False
-		print(closest_leagues)
-		return df[df["League"] == league], True
-	else:
+	except:
 		print("Query did not extract League")
 		return df, False
 
 def player_filt(df, pos, names):
-	if pos[0][0][:6] == 'Player' and pos[0][1] != 'null':
-		player = pos[0][1]
-		closest_players = find_entity(player, names)
-		if len(closest_players) == 1:
-			player = closest_players[0][0]
+	try:
+		if pos[0][0][:6] == 'Player' and pos[0][1] != 'null':
+			player = pos[0][1]
+			closest_players = find_entity(player, names)
+			if len(closest_players) == 1:
+				player = closest_players[0][0]
+			else:
+				print("Multiple Players with similar names")
+				return df, False
+			print(closest_players)
+			return df[df["Player"] == player], True
 		else:
-			print("Multiple Players with similar names")
+			print("Query did not extract player")
 			return df, False
-		print(closest_players)
-		return df[df["Player"] == player], True
-	else:
+	except:
 		print("Query did not extract player")
 		return df, False
 
 def stat_filt(df, pos, player):
-	if pos[3][1] != 'null':
-		#stat = find_stat(pos[3][1])
-		stat = search_stat(pos[3][1])
-		if not player:
-			return df[["Year", "League", "Player", stat]][df[stat].notnull()].sort_values(stat, ascending=False), True
+	try:
+		if pos[3][1] != 'null':
+			#stat = find_stat(pos[3][1])
+			stat = search_stat(pos[3][1])
+			if not player:
+				return df[["Year", "League", "Player", stat]][df[stat].notnull()].sort_values(stat, ascending=False), True
+			else:
+				return df[["Year", "League", "Player", stat]], True
 		else:
-			return df[["Year", "League", "Player", stat]], True
-	else:
+			print("Query did not extract stat")
+			return df, False
+	except:
+		print("Query did not extract stat")
 		return df, False
 
 def pos_filt(df, prompt):
