@@ -37,9 +37,9 @@ if state.submitted:
 	    with col2:
 	    	stat = stats_list[0]
 	    	if len(sta) > 1:
-			    stat = stm.selectbox("Select a stat", stats_list)
-			fig = line_chart(players, filtered_df, stat)
-		    stm.plotly_chart(fig, use_container_width=True)
+	    	    stat = stm.selectbox("Select a stat", stats_list)
+	    	fig = line_chart(players, filtered_df, stat)
+	    	stm.plotly_chart(fig, use_container_width=True)
     else:
     	valid_years = [min(filtered_df["Year"]), max(filtered_df["Year"])]
 
