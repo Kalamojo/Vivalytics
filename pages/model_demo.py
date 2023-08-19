@@ -35,8 +35,10 @@ if state.submitted:
 	    stats_list = [col for col in filtered_df.columns if col not in ["Year", "League", "Player"]]
 
 	    with col2:
-		    stat = stm.selectbox("Select a stat", stats_list)
-		    fig = line_chart(players, filtered_df, stat)
+	    	stat = stats_list[0]
+	    	if len(sta) > 1:
+			    stat = stm.selectbox("Select a stat", stats_list)
+			fig = line_chart(players, filtered_df, stat)
 		    stm.plotly_chart(fig, use_container_width=True)
     else:
     	valid_years = [min(filtered_df["Year"]), max(filtered_df["Year"])]
