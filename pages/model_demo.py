@@ -18,11 +18,14 @@ if state.submitted:
     filtered_df, pos, worked = pos_filt(df, query_text)
     stm.write(pos)
 
-
     if worked[1]:
 	    valid_years = [min(filtered_df["Year"]), max(filtered_df["Year"])]
 
 	    years = stm.slider('Select Year Range', valid_years[0], valid_years[1], value=[valid_years[0], valid_years[1]])
+
+	    print(years)
+
+	    filtered_df = filtered_df[(filtered_df["Year"] >= years[0]) & (filtered_df["Year"] <= years[1])]
 
 	    col1, col2 = stm.columns([1, 1], gap="small")
 	    with col1:
@@ -30,10 +33,6 @@ if state.submitted:
 	    players = list(set(filtered_df["Player"].to_list()))
 
 	    stats_list = [col for col in filtered_df.columns if col not in ["Year", "Player"]]
-
-	    print(years)
-
-	    filtered_df = filtered_df[(filtered_df["Year"] >= years[0]) & (filtered_df["Year"] <= years[1])]
 
 	    with col2:
 		    stat = stm.selectbox("Select a stat", stats_list)
