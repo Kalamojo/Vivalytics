@@ -32,7 +32,7 @@ if state.submitted:
 	    	stm.dataframe(filtered_df)
 	    players = list(set(filtered_df["Player"].to_list()))
 
-	    stats_list = [col for col in filtered_df.columns if col not in ["Year", "Player"]]
+	    stats_list = [col for col in filtered_df.columns if col not in ["Year", "League", "Player"]]
 
 	    with col2:
 		    stat = stm.selectbox("Select a stat", stats_list)

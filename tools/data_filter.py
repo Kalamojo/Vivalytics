@@ -39,9 +39,9 @@ def stat_filt(df, pos, player):
 		#stat = find_stat(pos[3][1])
 		stat = search_stat(pos[3][1])
 		if not player:
-			return df[["Year", "Player", stat]].sort_values(stat, ascending=False), True
+			return df[["Year", "League", "Player", stat]].sort_values(stat, ascending=False), True
 		else:
-			return df[["Year", "Player", stat]], True
+			return df[["Year", "League", "Player", stat]], True
 	else:
 		return df, False
 
