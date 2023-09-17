@@ -6,7 +6,7 @@ from tools.scrape import get_img_link
 
 stm.title("Player Stats")
 stm.sidebar.success("You are currently viewing The Player Stats page")
-df = pd.read_csv("./resources/persons_all_stats.csv")
+df = pd.read_csv("./resources/persons_all_stats.csv", low_memory=False, memory_map=True)
 
 stat_spread = {"FW": ["Gls", "SoT", "PrgC", "Carries", "Touches", "PK"],
 			   "MF": ["Cmp", "Cmp%", "KP", "PrgP", "Carries", "TklW"],

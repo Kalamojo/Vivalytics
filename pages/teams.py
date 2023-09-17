@@ -5,7 +5,7 @@ from tools.line import line_chart
 
 stm.title("Team Stats")
 stm.sidebar.success("You are currently viewing The Squad Stats page")
-df = pd.read_csv("./resources/team_all_stats.csv")
+df = pd.read_csv("./resources/team_all_stats.csv", low_memory=False, memory_map=True)
 
 team = stm.selectbox("Enter the name of a Squad", 
 						  [''] + sorted(list(set(df["Squad"]))),

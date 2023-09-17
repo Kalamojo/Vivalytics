@@ -1,7 +1,8 @@
 import streamlit as stm
 import pandas as pd
-from tools.data_filter import pos_filt
+from tools.data_filter2 import pos_filt2
 from tools.line import line_chart
+from tools.api_call import gpt_res3
 
 state = stm.session_state
 
@@ -15,7 +16,8 @@ submit_button = stm.button("Let's see", on_click=lambda: state.update(submitted=
 
 if state.submitted:
     # Display the output
-    filtered_df, pos, worked = pos_filt(df, query_text)
+    filtered_df, pos, worked = pos_filt2(df, query_text)
+
     stm.write(pos)
 
     if worked[1]:
@@ -46,4 +48,9 @@ if state.submitted:
     	years = stm.slider('Select Year Range', valid_years[0], valid_years[1], value=[valid_years[0], valid_years[1]])
 
     	stm.dataframe(filtered_df)
+
+    table = filtered_df.head(100).to_string()
+    response = gpt_res3(query_text, pos, table)
+
+    stm.write(response)
     

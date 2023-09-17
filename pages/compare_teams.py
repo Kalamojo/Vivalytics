@@ -5,7 +5,7 @@ from tools.line import line_chart
   
 stm.title("Team Stats Comparison")
 stm.sidebar.success("You are currently viewing The Squad Comparison page")
-df = pd.read_csv("./resources/team_all_stats.csv")
+df = pd.read_csv("./resources/team_all_stats.csv", low_memory=False, memory_map=True)
 
 squadList = stm.multiselect("Enter Squad Names", sorted(list(set(df["Squad"]))))
 #player2 = stm.text_input("Enter the second player name")

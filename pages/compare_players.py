@@ -5,7 +5,7 @@ from tools.line import line_chart
 
 stm.title("Player Stats Comparison")
 stm.sidebar.success("You are currently viewing The Player Comparison page")
-df = pd.read_csv("./resources/persons_all_stats.csv")
+df = pd.read_csv("./resources/persons_all_stats.csv", low_memory=False, memory_map=True)
 
 stat_spread = {"FW": ["Gls", "SoT", "PrgC", "Carries", "Touches", "PK"],
 			   "MF": ["Cmp", "Cmp%", "KP", "PrgP", "Carries", "TklW"],
