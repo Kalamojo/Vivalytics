@@ -3,6 +3,7 @@ import pandas as pd
 from tools.data_filter2 import pos_filt2
 from tools.line import line_chart
 from tools.api_call import gpt_res3
+from tools.stat_search import stat_desc
 
 state = stm.session_state
 
@@ -31,7 +32,18 @@ if state.submitted:
 
 	    col1, col2 = stm.columns([1, 1], gap="small")
 	    with col1:
-	    	stm.dataframe(filtered_df)
+	    	config_dict = {
+	    		key: stm.column_config.Column(
+	    			key,
+	    			help=value
+	    		) for key, value in stat_desc.items() if key in filtered_df.columns
+	    	}
+	    	print(config_dict)
+	    	stm.write("Hover over a stat in the headers to see a description")
+	    	stm.dataframe(
+	    	    filtered_df,
+	    	    column_config=config_dict
+	    	)
 	    players = list(set(filtered_df["Player"].to_list()))
 
 	    stats_list = [col for col in filtered_df.columns if col not in ["Year", "League", "Player"]]
@@ -47,7 +59,18 @@ if state.submitted:
 
     	years = stm.slider('Select Year Range', valid_years[0], valid_years[1], value=[valid_years[0], valid_years[1]])
 
-    	stm.dataframe(filtered_df)
+    	config_dict = {
+    		key: stm.column_config.Column(
+    			key,
+    			help=value
+    		) for key, value in stat_desc.items() if key in filtered_df.columns
+    	}
+    	print(config_dict)
+    	stm.write("Hover over a stat in the headers to see a description")
+    	stm.dataframe(
+    	    filtered_df,
+    	    column_config=config_dict
+    	)
 
     table = filtered_df.head(100).to_string()
     response = gpt_res3(query_text, pos, table)

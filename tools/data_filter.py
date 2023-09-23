@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from tools.api_call import gpt_res
 from tools.match_name import find_entity
-from tools.stat_search import find_stat, search_stat
+from tools.stat_search import find_stat, search_stat, stat_desc
 
 def league_filt(df, pos, leagues):
 	try:
@@ -53,10 +53,10 @@ def stat_filt(df, pos, player):
 				return df[["Year", "League", "Player", stat]], True
 		else:
 			print("Query did not extract stat")
-			return df, False
+			return df[["Year", "League", "Player"] + list(stat_desc.keys())], False
 	except:
 		print("Query did not extract stat")
-		return df, False
+		return df[["Year", "League", "Player"] + list(stat_desc.keys())], False
 
 def pos_filt(df, prompt):
 	res = gpt_res(prompt)
