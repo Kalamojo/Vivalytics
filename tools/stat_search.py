@@ -11,7 +11,7 @@ import streamlit as stm
 #nlp = spacy.load("en_core_web_sm")
 
 # Load the cohere model
-co = cohere.Client(st.secrets["cohere_apikey"]) # This is your trial API key
+co = cohere.Client(stm.secrets["cohere_apikey"]) # This is your trial API key
 
 stat_desc = {"Gls": "Goals",
              "SoT": "Shots on Target",
