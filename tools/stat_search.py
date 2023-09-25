@@ -4,13 +4,14 @@ from sklearn.metrics.pairwise import cosine_similarity as dist
 import cohere
 from fuzzywuzzy import process
 import difflib
+import streamlit as stm
 #import spacy
 
 # Load the spaCy English model
 #nlp = spacy.load("en_core_web_sm")
 
 # Load the cohere model
-co = cohere.Client('0Qp52FnTMwc3dhwWafuGWw8yOqdyy1bKK0usvqxD') # This is your trial API key
+co = cohere.Client(st.secrets["cohere_apikey"]) # This is your trial API key
 
 stat_desc = {"Gls": "Goals",
              "SoT": "Shots on Target",
